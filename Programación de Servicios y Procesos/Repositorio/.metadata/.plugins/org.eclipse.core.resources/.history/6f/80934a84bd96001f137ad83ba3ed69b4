@@ -1,0 +1,92 @@
+package ContarVocales;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ContadorVocales implements Runnable{
+	
+	public static int numVocales = 0;
+	public int numVocal = 0;
+	private char vocal;
+	private static char vocales[] = {'a', 'e', 'i','o','u'};
+	
+	public ContadorVocales() {
+	}
+	
+	public void setVocal(char vocal) {
+		this.vocal = vocal;
+	}
+	
+	String texto = "sdfasoqndasm,oasdaosdnaisndanqndasdzxdaeuisocasocasiu";
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		int n = 5;
+		
+		ArrayList<Thread> lt = new ArrayList<Thread>();
+		
+		ContadorVocales cv = new ContadorVocales();
+		
+		cv.setVocal('a');
+		Thread t1 = new Thread(cv);
+		lt.add(t1);
+		t1.start();
+		
+		cv.setVocal('e');
+		Thread t2 = new Thread(cv);
+		lt.add(t2);
+		t2.start();
+		
+		cv.setVocal('i');
+		Thread t3 = new Thread(cv);
+		lt.add(t3);
+		t3.start();
+		
+		cv.setVocal('o');
+		Thread t4 = new Thread(cv);
+		lt.add(t4);
+		t4.start();
+		
+		cv.setVocal('u');
+		Thread t5 = new Thread(cv);
+		lt.add(t5);
+		t5.start();
+		
+		
+//		for(int i = 0; i < n; i++) {
+//			cv.setVocal(vocales[i]);
+////			ContadorVocales cv = new ContadorVocales();
+////			Thread t = new Thread(new ContadorVocales(vocales[i]));
+//			Thread t = new Thread(cv);
+//			lt.add(t);
+//		}
+		
+		for(Thread t : lt) {
+			t.start();
+		}
+		for(Thread t : lt) {
+			t.join();
+		}
+		
+		System.out.println(numVocales);
+	}
+	
+	public void run() {
+		contarVocal();
+		
+		
+	}
+	
+	public void contarVocal() {
+		for(int i = 0; i < texto.length(); i++) {
+			if(texto.charAt(i) == (char)this.vocal) {
+				sumaVocalesTotal();
+			}
+		}
+	}
+	
+	public synchronized void sumaVocalesTotal() {
+		numVocales++;
+	}
+
+}

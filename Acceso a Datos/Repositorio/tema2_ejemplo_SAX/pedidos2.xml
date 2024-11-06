@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pedidos>
+    <pedido>
+        <cliente id="23">
+            <nombre>Julia</nombre>
+            <nif>1224</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descipcion>ordenador</descipcion>
+                <precio>1000.0</precio>
+                <cantidad>3</cantidad>
+            </producto>
+            <producto>
+                <descipcion>pantalla</descipcion>
+                <precio>10000.0</precio>
+                <cantidad>4</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+    <pedido>
+        <cliente id="45">
+            <nombre>Marta</nombre>
+            <nif>1225</nif>
+        </cliente>
+        <listaProductos>
+            <producto>
+                <descipcion>tablet</descipcion>
+                <precio>100.0</precio>
+                <cantidad>15</cantidad>
+            </producto>
+            <producto>
+                <descipcion>raton</descipcion>
+                <precio>50.0</precio>
+                <cantidad>30</cantidad>
+            </producto>
+        </listaProductos>
+    </pedido>
+</pedidos>

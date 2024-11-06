@@ -1,0 +1,11 @@
+<librosCasa>
+	<libro>
+		<titulo>Casa</titulo>
+		<autor>Peppe</autor>
+	</libro>
+	<libro>
+		<titulo>Casa2</titulo>
+		<autor>Peppe2</autor>
+	</libro>
+
+</librosCasa>

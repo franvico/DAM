@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<matriculas>
+    <matricula>
+        <alumno>pepe</alumno>
+        <asignaturas>
+            <asignatura>
+                <precio>500.0</precio>
+                <nombre>mates</nombre>
+            </asignatura>
+            <asignatura>
+                <precio>400.0</precio>
+                <nombre>fisica</nombre>
+            </asignatura>
+        </asignaturas>
+    </matricula>
+    <matricula>
+        <alumno>juan</alumno>
+        <asignaturas>
+            <asignatura>
+                <precio>500.0</precio>
+                <nombre>mates</nombre>
+            </asignatura>
+        </asignaturas>
+    </matricula>
+</matriculas>

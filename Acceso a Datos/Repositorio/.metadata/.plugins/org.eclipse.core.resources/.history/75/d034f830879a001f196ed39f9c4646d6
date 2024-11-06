@@ -1,0 +1,29 @@
+package tema4_JASPER_REPORT;
+
+import java.util.List;
+
+public class Informes {
+	
+	public static void generarInforme(List<DatosAlumno> datos) {
+		
+		String ficheroJasper = "reports\\listadoAlumnos.jasper";
+		String nombreInforme = "reposts\\listadoAlumnos.pdf";
+		
+		JRBeanCollectionDataSource camposInforme = new JRBeanCollectionDataSource(datos);
+		
+		// compilamos la plantilla:
+		
+		JasperReport jasperReport = (JasperReport) JRLoad.loadObjectFromFile(ficheroJasper);
+		
+		// rellenamos el informe
+		
+		JasperPrint informe = JasperFillManager.fillReport(jasperReport, null, camposInforme);
+		
+		// exportamos a pdf
+		JasperExportManager.exportReportToPdfFile(informe, nombreInforme);
+		
+		
+		
+	}
+
+}

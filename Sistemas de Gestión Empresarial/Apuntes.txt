@@ -1,0 +1,93 @@
+
+-------------------------------------------
+TEMA : INTRODUCCIÓN A LA ECONOMÍA Y EMPRESA
+-------------------------------------------
+
+	ECONOMÍA
+		Ciencia que, partiendo de RECURSOS limitados, optimiza el cumplimiento de las NECESITADES humanas, ilimitadas.
+
+	PIRÁMIDE DE MASLOW -> Califica las necesidades humanas
+		
+		    Necesidades de
+		   Autorrealización
+	          -------------------
+		    Necesidades de
+		    Reconocimiento
+		-----------------------
+		  Necesidades Sociales
+	      ---------------------------
+		Necesidades Fisiológicas
+	    -------------------------------
+
+	TEORÍAS MATHUSSIANAS (MATHUS)
+		Por muy buena que fuera una economía, si la población aumentaba mucho se podía generar falta de recursos, ej: comida.
+		Aunque a día de hoy, a pesar del crecimiento exponencial de la población, también ha habido un crecimiento de la producción
+		de recursos, lo cuál permite la cobertura de necesidades.
+
+	FACTORES DE PRODUCCIÓN
+		-> Factor TRABAJO : el que realiza una persona. (Personas)
+		-> Factor CAPITAL : dinero y bienes. (Ordenadores, edificios, vehículos...)
+		-> Factor TIERRA : recursos naturales. (Madera, carbón...)
+
+	EMPRESA
+		Unidad básica de producción (economía).
+		Entidad que gestiona los factores de producción para, con ellos, satisfacer una o varias necesidades.
+		Estas coberturas se pueden dividir en:
+		-> Bienes
+		-> Servicios
+		Con la transformación de los factores de producción en bienes y servicios, la empresas crean valor.
+
+
+-----------------------------------
+TEMA : ORGANIZACIÓN DE LAS EMPRESAS
+-----------------------------------
+
+
+
+-----------------------------------
+TEMA : ÁREAS FUNCIONALES
+-----------------------------------
+
+
+	ÁREAS FUNCIONALES
+		-> INVERSIÓN Y FINANCIACIÓN : cómo conseguir el dinero, en qué invertir. Relación con el estado (impuestos y trámites legales). Contabilidad.
+		-> PRODUCCIÓN : función de aprovisionamiento, cantidad de materia prima, cadena de producción, eficiencia de producción. 
+		-> COMERCIAL : conocer los mercados, dar a conocer el producto.
+		-> RRHH : gestión de los trabajadores de la empresa, nóminas, contratos, formación. Estudiar las necesidades de personal de los diferentes departamentos.
+	
+	ORGANIGRAMA
+		Representación gráfica de la organización de roles dentro de la empresa. El más común es el de tipo jerárquico.
+		Organización formal
+
+	ORGANIZACIÓN INFORMAL		
+		Funciona a través de la COMUNICACIÓN VERTICAL, que es una comunicación directa entre roles no adyacentes entre sí.
+
+	CONTABILIDAD
+		Su objetivo es reflejar la "imagen fiel" del estado financiero de la empresa:
+		- A través de un sistema de gestión empresarial (antiguamente en papel).
+		- Las empresas tienen obligación que publicar sus cuentas anualmente en el registro mercantil (a excepción de los autónomos en algunas circustancias).
+		
+		CUENTAS DEL PLAN GENERAL CONTABLE (PGC)
+			Donde se registra de forma normaliza el valor monetario de algo que posee la empresa: Ej -> Banco id:572, Elementos de transporte id:xxx, ...
+			Este acto se denomina "apunte contable".
+			Tipos:
+				-> Activo : si en el momento que deja de formar parte de la empresa, ésta ingresa dinero. Ej: vehículo, edificio, ordenadores.
+				-> Pasivo : si en el momento que deja de formar parte de la empresa, ésta pierde dinero. Ej: factura luz, nóminas.
+
+		AMORTIZACIÓN
+			Aplica a los activos. Es la cuantificación de la depreciación de un bien. Esta cuantificación se puede añadir al valor de gastos.
+
+		PARTIDA DOBLE
+			Al momento de hacer un apunte contable se hace en dos para compensar.
+			Lo que apunto en el DEBE de una cuenta lo tengo que compensar en el HABER de otra.
+			DEBE | HABER
+
+
+
+
+
+
+Soluciones -> 	- crear el proyecto Vite en linux. Probar a usar el subsistema de windows para linux
+		- añadir como dependencia de dev en la imagen base
+		- si no funciona usar VSCode desde el directorio de archivos del docker. Hacer los cambios y probarlos en local y si funcionan modificar en el docker directamente
+	

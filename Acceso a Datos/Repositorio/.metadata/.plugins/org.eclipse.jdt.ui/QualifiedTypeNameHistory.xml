@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ejemplosFicheros.NoEsDirectorioException"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="beans.Contacto"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutput"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.EOFException"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilder"/>
+    <fullyQualifiedTypeName name="entidadesPedidos.Cliente"/>
+    <fullyQualifiedTypeName name="entidadesPedidos.Pedidos"/>
+    <fullyQualifiedTypeName name="ejercicioMatriculas.Matriculas"/>
+    <fullyQualifiedTypeName name="ejercicioMatriculas.Asignatura"/>
+    <fullyQualifiedTypeName name="ejercicioMatriculas.Matricula"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.Unmarshaller"/>
+    <fullyQualifiedTypeName name="entidadesPedidos.Pedido"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="jakarta.xml.bind.JAXBContext"/>
+    <fullyQualifiedTypeName name="entidadesPedidos.Producto"/>
+    <fullyQualifiedTypeName name="clasesJAXB.Pedidos"/>
+    <fullyQualifiedTypeName name="clasesJAXB.Pedidos.Pedido"/>
+    <fullyQualifiedTypeName name="clasesJAXB.Pedidos.Pedido.ListaProductos"/>
+    <fullyQualifiedTypeName name="clasesJAXB.Pedidos.Pedido.ListaProductos.Producto"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.SAXParserFactory"/>
+    <fullyQualifiedTypeName name="javax.xml.parsers.SAXParser"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="org.json.JSONArray"/>
+    <fullyQualifiedTypeName name="org.json.JSONObject"/>
+    <fullyQualifiedTypeName name="tema4_JASPER_REPORT.DatosAlumno"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="tema4_JASPER_REPORT.Informes"/>
+</qualifiedTypeNameHistroy>

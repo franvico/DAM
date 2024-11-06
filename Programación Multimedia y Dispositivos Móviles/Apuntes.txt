@@ -1,0 +1,13 @@
+
+Asegurarse de tener instalado SDK API. Una vez instalado el Android Studio:
+	More Actions -> SDK Manager
+	Aparecerá que tenems instalada la última versión.
+	Instalar además la versión 9 porque es una versión ampliamente utilizada.
+	En la Web apilevels.com puedo consultar el porcentaje de usuarios que usan cada versión.
+	Instalar esa versión
+
+	Consultar diferencia entre JDK y SDK
+
+	Pestaña SDK Tools
+	 - Android SDK Build Tools 35
+	 - 

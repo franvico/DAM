@@ -1,0 +1,23 @@
+
+
+------------------ 	get input stream		--------------------
+Proceso padre		<-------------			Proceso hijo
+
+			get outout stream		
+------------------	--------->			--------------------
+
+El padre envía datos al hijo con el getOutputStream, que conecta una salida del padre
+con el in del hijo. El hijo usa los datos con su propio System.in
+Para recoger datos del hijo, el padre usa getInputStream, que conecta el out del hijo
+con una entrada del padre (no el in como en el caso contrario)
+
+Estos OutputStream están asociados al objeto process, que es el proceso hijo.
+El proceso hijo "no se entera" de la comunicación con el padre, es el padre el que envía y
+recoge información sin que el hijo ejecute nada para enviar o recibir.
+
+-------------------------------
+
+Otros mecanismos usados para comunicación entre procesos:
+ - Sockets.
+ - JNI (Java Native Interface) -> me puedo comunicar a bajo nivel con procesos en otros lenguajes, como C.
+ - Librerías de comunicación no estándar

@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dam2.com</groupId>
+  <artifactId>tema1_FICHEROS_3_Logs</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>tema1_FICHEROS_3_Logs</name>
+  <description>tema1_FICHEROS_3_Logs</description>
+
+
+<!-- En este archivo le decimos que vamos a usar los log4j-->
+<!-- Para quitar el error de compilación, modificar el segundo http de la línea 1 por https-->
+<!-- Descargar logging framework de logj4 https://mvnrepository.com/search?q=log4j, tanto el core como la api desde el repositorio de Maven
+	 Core : https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core (elegir versión 2.24.1)
+	 API : https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api (elegir versión 2.24.1)
+	 Al guardar los cambios descarga las dependencias y crea la carpeta Maven Dependencies
+	 -->
+	 
+<!-- Abrir el nodo <dependencies> donde pegamos los que hemos copidado de maven-->
+	<dependencies>
+	
+		<!--https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.24.1</version>
+		</dependency>
+		
+		<!--https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.24.1</version>
+		</dependency>
+
+	</dependencies>"
+
+</project>
