@@ -1,0 +1,36 @@
+JAXB
+
+@XmlRootElement --> para etiquetar el elemento raíz del xml
+
+@XmlType(propOrder = {"precio", "nombre"}) --> ordena los atributos de la clase en el xml por el order definido entre llaves
+
+@XmlElement(name = "matricula") --> name coincide con el nombre de la etiqueta del XML y la mapeamos con el nombre del atributo, que será diferente
+	public List<Matricula> getMatriculas() {
+		return matriculas;
+	}
+
+@XmlTransient --> para que una propiedad no se escriba como nodo
+
+@XmlAttribute --> para definir que ese atributo es un id de etiqueta EJ: <alumno id="123">
+public int getId() {
+	return id;
+}
+
+@XmlElementWrapper(name = "listaProductos") --> con esto le indico que al crear el XML envuelva todas las etiquetas <producto> en otra llamada <listaProductos>
+@XmlElement(name = "producto")
+public List<Producto> getProductos() {
+	return productos;
+}
+
+
+INSTALAR XJC -> esta herramienta usa como datos de entrada un schema(.xsd) (podemos usar un convertidor online)
+HELP --> Install new software
+	Work with -> 2023-06 (el primer repositorio que aparece)
+	En el textfield elegimos -> desplegamos WEB, XML --> Elegimos JAXB Support
+
+Los .xsd los guardamos en src/main/resources
+Para crear las clases a partir de ese .xsd --> clic derecho en el fichero -> Generate -> JAXB Classes
+ANTES! --> descargar las dependencias de JAXB-XJC desde Maven Repository -> elegimos la versión y copiamos la etiqueta de las dependencias en el 
+fichero pom.xml del proyecto maven -> al pegar la etiqueta de las dependencias y guardar, las dependencias del proyecto se actualizan
+
+https://mvnrepository.com/artifact/org.glassfish.jaxb/jaxb-xjc/4.0.5

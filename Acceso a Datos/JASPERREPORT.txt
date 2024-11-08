@@ -1,0 +1,6 @@
+Librería Jasper Reports
+
+Plantilla .jrxml -> define por coordenadas cómo se va a llenar el pdf, en conjunto con Jasper Reports crea el fichero pdf
+
+rgomez4@educa.madrid.org
+Jaspersoft2024

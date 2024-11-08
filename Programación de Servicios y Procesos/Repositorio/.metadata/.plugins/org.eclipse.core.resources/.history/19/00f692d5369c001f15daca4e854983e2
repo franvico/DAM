@@ -6,16 +6,16 @@ public class RC implements Runnable {
 	
 	Object candado;
 	
-	static Object candado1 = new Object();
-	static Object candado2 = new Object();
+	Object candado1 = new Object();
+	Object candado2 = new Object();
 	
 	public RC(Object candado) {
 		this.candado = candado;
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-//		Object candado1 = new Object();
-//		Object candado2 = new Object();		
+		Object candado1 = new Object();
+		Object candado2 = new Object();		
 		
 		Thread t = new Thread(new RC(candado1));
 		t.start();
@@ -36,13 +36,13 @@ public class RC implements Runnable {
 			inc2();
 		}
 	}
-	public void inc1() {
+	public synchronized void inc1() {
 		synchronized(candado1) {
 			c1++;			
 		}
 
 	}
-	public void inc2() {
+	public synchronized void inc2() {
 		synchronized(candado2) {
 			c2++;			
 		}

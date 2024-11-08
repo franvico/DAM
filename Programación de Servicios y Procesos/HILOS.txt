@@ -1,0 +1,29 @@
+PROBLEMAS TRABAJANDO CON HILOS
+
+INANICIÓN
+INTERBLOQUEO
+BLOQUE ACTIVO
+CONDICIÓN DE CARRERA (RACE CONDITION) -> la ejecución de las órdenes en un orden distinto afecta al resultado
+INCONSISTENCIA DE MEMORIA -> cuando varios hilos acceden al mismo espacio de memoria y cambian su valor, por lo que se obtiene un valor distinto en cada lectura
+
+
+SINCRONIZACIÓN DE HILOS
+	Solucionan los problemas de Race Condition e Inconsistencia de Memoria. Pero puede producir los tres primeros errores
+
+	Condiciones de Bernstein
+		Condiciones que puedo usar para saber si los trozos de código son independientes y por lo tanto se pueden ejecutar sin generar problemas.
+		- Dependencia de flujo
+		- Antidependencia
+		- Dependencia de salida
+
+	Operaciones Atómicas
+		volatile -> para variables primitivas que son accedidas por varios hilos (sólo para variables primitivas!!) -> permite que la lectura y escritura sea sólo en la RAM y no se haga en la caché
+
+		Sección crítica		
+			Cuando un trozo de código no cumple las condiciones de Bernstein sólo accedemos a él de forma síncrona, es decir, ordenada.
+			Espero a que termine la ejecución de ese código antes de liberar los recursos para otro hilo. (Protejo esa sección de código)
+
+	Monitores
+		Objeto que controla la sincronización de una parte del código. En este objeto se encuentra la parte del código a sincronizar o bien este objeto se usa como mutex para sincronizar un trozo de código.
+		Al usarse como monitor la instancia de este objeto debe ser única
+		
