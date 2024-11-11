@@ -1,25 +1,19 @@
 package cuentaBancaria;
 
-public class Cliente {
+import java.util.Random;
+
+public class Cliente implements Runnable{
 	
-	private double cantidad;
 	private String nombre;
+	private CuentaBancaria cuenta;
 
 	public Cliente() {
 		super();
 	}
 	
-	public Cliente(String nombre) {
+	public Cliente(String nombre, CuentaBancaria cuenta) {
 		this.nombre = nombre;
-		this.cantidad = 0;
-	}
-
-	public double getCantidad() {
-		return cantidad;
-	}
-
-	public void setCantidad(double cantidad) {
-		this.cantidad = cantidad;
+		this.cuenta = cuenta;
 	}
 
 	public String getNombre() {
@@ -30,19 +24,52 @@ public class Cliente {
 		this.nombre = nombre;
 	}
 	
-	public void ingresarDinero(CuentaBancaria cuenta, double cantidad) {
-		cuenta.setCantidad(cuenta.getCantidad() + cantidad);
-		this.setCantidad(this.getCantidad() - cantidad);
+	public void ingresarDinero(double cantidad) {
+		
+		synchronized (cuenta) {
+			cuenta.setCantidad(cuenta.getCantidad() + cantidad);
+			System.out.println("\n" + this.getNombre() + " ha ingresado: " + cantidad);
+			System.out.println("Cuenta actualizada con: " + cuenta.getCantidad() + "\n");
+			
+			cuenta.notifyAll();
+		}
+		
+		
 	}
 	
-	public void sacarDinero(CuentaBancaria cuenta, double cantidad) {
-		cuenta.setCantidad(cuenta.getCantidad() - cantidad);
-		this.setCantidad(this.getCantidad() + cantidad);
-	}	
+	public void retirarDinero(double cantidad) {
+		synchronized (cuenta) {
+			// si cuenta.cantidad < cantidad --> duerme
+			while(cuenta.getCantidad() < cantidad) {
+				try {
+					System.out.println("Dinero insuficiente para " + this.getNombre() + " que quiere retirar: " + cantidad + "\n");
+					cuenta.wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		
+			cuenta.setCantidad(cuenta.getCantidad() - cantidad);		
+			System.out.println("\n" + this.getNombre() + " ha retirado: " + cantidad);
+			System.out.println("Cuenta actualizada con: " + cuenta.getCantidad() + "\n");
+		}
+	}
 	
 
+	public void run() {
+		while(true) {
+			double cantidad = new Random().nextDouble(100);
+			if(tirarDado()) {
+				ingresarDinero(cantidad);
+			}else {
+				retirarDinero(cantidad);
+			}
+		}
+		
+	}
 	
-	
-	
-
+	public boolean tirarDado() {		
+		int num = new Random().nextInt(6) + 1;		
+		return (num % 2 == 0) ? true : false;
+	}
 }

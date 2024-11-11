@@ -5,17 +5,21 @@ public class CuentaBancaria {
 	private double cantidad;
 
 	public CuentaBancaria() {
-		this.cantidad = 500.00;
+		this.cantidad = 100.00;
 	}
 
-	public double getCantidad() {
+	public synchronized double getCantidad() {
 		return cantidad;
 	}
 
-	public void setCantidad(double cantidad) {
+	public synchronized void setCantidad(double cantidad) {
 		this.cantidad = cantidad;
 	}
 	
-	
+	public void aprobarPrestamo() {
+		cantidad =+ 100;
+		System.out.println("\nSe ha aprobado un préstamo de 100 euros a esta cuenta");
+		notifyAll();
+	}
 
 }
