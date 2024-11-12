@@ -20,6 +20,23 @@ namespace Practica2_XML.Modelos
             this.grado = grado;
         }
 
+        public Alumno() { }
+
+        public void setNombre(string nombre)
+        {
+            this.nombre = nombre;
+        }
+
+        public void setEdad(int edad)
+        {
+            this.edad = edad;
+        }
+
+        public void setGrado(int grado)
+        {
+            this.grado = grado;
+        }
+
 
     }
 }

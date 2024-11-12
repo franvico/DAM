@@ -16,5 +16,23 @@ namespace Practica2_XML.Modelos
             this.nombre = nombre;
             this.alumnos = alumnos;
         }
+
+        public Asignatura() {
+            alumnos = new List<Alumno>();
+        }
+
+        public void setNombre(string nombre)
+        {
+            this.nombre = nombre;
+        }
+        public void setAlumnos(List<Alumno> alumnos)
+        {
+            this.alumnos = alumnos;
+        }
+
+        public List<Alumno> getAlumnos()
+        {
+            return alumnos;
+        }
     }
 }
