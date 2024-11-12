@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<universidad>
+	<asignatura nombre="Matemáticas">
+		<alumno>
+			<nombre>Juan Pérez</nombre>
+			<edad>15</edad>
+			<grado>10</grado>
+		</alumno>
+		<alumno>
+			<nombre>Ana García</nombre>
+			<edad>16</edad>
+			<grado>10</grado>
+		</alumno>
+	</asignatura>
+
+	<asignatura nombre="Ciencias">
+		<alumno>
+			<nombre>Carlos López</nombre>
+			<edad>14</edad>
+			<grado>9</grado>
+		</alumno>
+		<alumno>
+			<nombre>María Rodríguez</nombre>
+			<edad>15</edad>
+			<grado>9</grado>
+		</alumno>
+	</asignatura>
+
+	<asignatura nombre="Historia">
+		<alumno>
+			<nombre>Laura Martínez</nombre>
+			<edad>17</edad>
+			<grado>12</grado>
+		</alumno>
+	</asignatura>
+</universidad>

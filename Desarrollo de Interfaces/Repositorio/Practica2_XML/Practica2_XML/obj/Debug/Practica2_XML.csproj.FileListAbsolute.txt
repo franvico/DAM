@@ -1,0 +1,7 @@
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\bin\Debug\Practica2_XML.exe.config
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\bin\Debug\Practica2_XML.exe
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\bin\Debug\Practica2_XML.pdb
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\obj\Debug\Practica2_XML.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\obj\Debug\Practica2_XML.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\obj\Debug\Practica2_XML.exe
+C:\Users\Alumno\Desktop\DAM\Desarrollo de Interfaces\Repositorio\Practica2_XML\Practica2_XML\obj\Debug\Practica2_XML.pdb
