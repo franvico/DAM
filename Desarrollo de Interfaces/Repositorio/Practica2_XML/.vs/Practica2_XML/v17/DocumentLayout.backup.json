@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|c:\\users\\alumno\\desktop\\dam\\desarrollo de interfaces\\repositorio\\practica2_xml\\practica2_xml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|solutionrelative:practica2_xml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|solutionrelative:Practica2_XML\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\practica2_xml\\modelos\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|solutionrelative:practica2_xml\\modelos\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Modelos\\Asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|solutionrelative:Practica2_XML\\Modelos\\Asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\practica2_xml\\modelos\\asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|solutionrelative:practica2_xml\\modelos\\asignatura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\bin\\Debug\\universidad.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Practica2_XML\\bin\\Debug\\universidad.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Modelos\\Alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2E78F15-1DD7-4E1E-9054-B23CC9088426}|Practica2_XML\\Practica2_XML.csproj|solutionrelative:Practica2_XML\\Modelos\\Alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,33 +26,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "universidad.xml",
+              "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\bin\\Debug\\universidad.xml",
+              "RelativeDocumentMoniker": "Practica2_XML\\bin\\Debug\\universidad.xml",
+              "ToolTip": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\bin\\Debug\\universidad.xml",
+              "RelativeToolTip": "Practica2_XML\\bin\\Debug\\universidad.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-11-12T22:03:08.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Asignatura.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Modelos\\Asignatura.cs",
               "RelativeDocumentMoniker": "Practica2_XML\\Modelos\\Asignatura.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Modelos\\Asignatura.cs",
               "RelativeToolTip": "Practica2_XML\\Modelos\\Asignatura.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T11:20:24.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Alumno.cs",
               "DocumentMoniker": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Modelos\\Alumno.cs",
               "RelativeDocumentMoniker": "Practica2_XML\\Modelos\\Alumno.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Modelos\\Alumno.cs",
               "RelativeToolTip": "Practica2_XML\\Modelos\\Alumno.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAD4vx0AAAAbAAAAAAAAAA==",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T11:17:29.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T11:17:29.843Z"
             },
             {
               "$type": "Document",
@@ -58,7 +74,7 @@
               "RelativeDocumentMoniker": "Practica2_XML\\Program.cs",
               "ToolTip": "C:\\Users\\Alumno\\Desktop\\DAM\\Desarrollo de Interfaces\\Repositorio\\Practica2_XML\\Practica2_XML\\Program.cs",
               "RelativeToolTip": "Practica2_XML\\Program.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowHEAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAK0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T09:12:49.584Z",
               "EditorCaption": ""
