@@ -50,12 +50,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="dam"/>
 			<item value="com.dam2"/>
+			<item value="dam"/>
 		</list>
 		<list key="name">
+			<item value="Tema2_JDBC_1"/>
 		</list>
 		<list key="artifactId">
+			<item value="Tema2_JDBC_1"/>
 			<item value="dam"/>
 			<item value="tema3_ejemplo_JSON"/>
 		</list>
