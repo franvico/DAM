@@ -1,6 +1,6 @@
 package LectoresEscritores;
 
-public class Escritor {
+public class Escritor implements Runnable{
 	
 	private String nombre;
 	private Libro libro;
@@ -12,14 +12,40 @@ public class Escritor {
 		this.boli = boli;
 	}
 	
+	public void run() {
+				
+		// dormir a otros Escritores?? NO PUEDO, CADA UNO SE DUERME A SÍ MISMO
+		// Si ya hay un esritor trabajando, me duermo
+		// hasta que acaben los lectores que hay leyendo, me duermo. Pero bloqueo a los lectores nuevos
+		bloquearMasLectores();
+		
+		while() { // compruebo que los lectores actuales han terminado
+			boli.
+		}
+		
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}
 	
-	public void escribir(String contenido) {
+	public void escribir() {
 		synchronized (boli) {
-			libro.setContenido(contenido);
+			libro.setContenido("\n\tEl escritor " + nombre + " ha escrito.");
 		}
+		
+	}
+	
+	public void despertarLectores() {
+		
+	}
+	
+	public void despertarEscritores() {
+		
+	}
+	
+	public void bloquearMasLectores() {
+		libro.setPermitirMasLectores(false);
 		
 	}
 

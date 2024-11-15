@@ -1,6 +1,6 @@
 package LectoresEscritores;
 
-public class Lector {
+public class Lector implements Runnable{
 	
 	private String nombre;
 	private Libro libro;
@@ -12,8 +12,16 @@ public class Lector {
 		this.gafas = gafas;
 	}
 	
+	public void run() {
+		
+	}
+	
 	public String leer() {
 		return libro.getContenido();
+	}
+	
+	public void despertarEscritores() {
+		
 	}
 	
 
