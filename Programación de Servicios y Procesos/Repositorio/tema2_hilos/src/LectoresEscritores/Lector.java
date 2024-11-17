@@ -14,10 +14,25 @@ public class Lector implements Runnable{
 	
 	public void run() {
 		
+		while(!(libro.getNumEscritores() > 0)) {
+			synchronized (gafas) {
+				try {
+					gafas.wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}	
+			}			
+		}
+		
+		libro.añadirLector();
+		leer();
+		libro.restarLector();
+		
 	}
 	
-	public String leer() {
-		return libro.getContenido();
+	public void leer() {
+		System.out.println("El lector " + nombre + " ha leído:\n " + libro.getContenido() + "\n");
+		
 	}
 	
 	public void despertarEscritores() {

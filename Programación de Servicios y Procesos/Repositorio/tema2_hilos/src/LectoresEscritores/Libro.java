@@ -6,12 +6,16 @@ public class Libro {
 	private int numEscritores;
 	private int numLectores;
 	private boolean permitirMasLectores;
+	private Object boli; // objeto usado para wait() y notifyAll() de Escritores
+	private Object gafas; // objeto usado para los métodos wait() y notifyAll() de Lectores
 	
-	public Libro() {
+	public Libro(Object boli, Object gafas) {
 		this.contenido = "LIBRO DE LECTORES Y ESCRITORES\n";
 		this.numEscritores = 0;
 		this.numLectores = 0;
 		this.permitirMasLectores = true;
+		this.boli = boli;
+		this.gafas = gafas;
 	}
 	
 	public synchronized void setContenido(String contenido) {
@@ -20,28 +24,27 @@ public class Libro {
 	
 	public String getContenido() {
 		return contenido;
-	}
-	
-	public void setNumEscritores() {
-		this.numEscritores++;
-	}
-	
-	public int getNumEscritores() {	
-		return this.numEscritores;
-	}
-	
-	public int getNumLectores() {
+	}	
+	public synchronized int getNumLectores() {
 		return this.numLectores;
 	}
-	public void setNumLectores() {
+	public void añadirLector() {
 		this.numLectores++;
 	}
-	
-	public synchronized boolean getPermitirMasLectores() {
-		return this.permitirMasLectores;
+	public void restarLector() {
+		this.numLectores--;
 	}
-	public synchronized void setPermitirMasLectores(boolean bol) {
-		this.permitirMasLectores = bol;
+	public synchronized int getNumEscritores() {
+		return this.numEscritores;
+	}
+	public synchronized void añadirEscritor() {
+		this.numEscritores++;
+	}
+	public Object getBoli() {
+		return this.boli;
+	}
+	public Object getGafas() {
+		return this.gafas;
 	}
 	
 

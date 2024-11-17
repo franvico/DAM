@@ -15,14 +15,19 @@ public class Escritor implements Runnable{
 	public void run() {
 				
 		// dormir a otros Escritores?? NO PUEDO, CADA UNO SE DUERME A SÍ MISMO
-		// Si ya hay un esritor trabajando, me duermo
+		// Si ya hay un escritor trabajando, me duermo
 		// hasta que acaben los lectores que hay leyendo, me duermo. Pero bloqueo a los lectores nuevos
-		bloquearMasLectores();
+		libro.añadirEscritor();
 		
-		while() { // compruebo que los lectores actuales han terminado
-			boli.
-		}
-		
+		while(libro.getNumLectores() > 0) { // compruebo que los lectores actuales han terminado y si no duermo
+			synchronized (boli) {
+				try {
+					boli.wait();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}	
+			}			
+		}		
 	}
 	
 	public String getNombre() {
@@ -41,11 +46,6 @@ public class Escritor implements Runnable{
 	}
 	
 	public void despertarEscritores() {
-		
-	}
-	
-	public void bloquearMasLectores() {
-		libro.setPermitirMasLectores(false);
 		
 	}
 
