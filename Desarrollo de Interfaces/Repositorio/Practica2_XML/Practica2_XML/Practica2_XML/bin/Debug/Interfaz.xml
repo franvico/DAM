@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Interfaz>
+	<Buttons>
+		<Button>
+			<Name>btnMostrar</Name>
+			<Text>Guardar</Text>
+			<LocationX>100</LocationX>
+			<LocationY>100</LocationY>
+		</Button>
+
+		<Button>
+			<Name>btnCerrar</Name>
+			<Text>Cancelar</Text>
+			<LocationX>100</LocationX>
+			<LocationY>200</LocationY>
+		</Button>
+	</Buttons>
+	<Labels>
+		<Label>
+			<Name>lblBienvenido</Name>
+			<Text>Bienvenido a la aplicación</Text>
+			<LocationX>300</LocationX>
+			<LocationY>50</LocationY>
+			<Width>200</Width>
+			<Height>30</Height>
+		</Label>
+	</Labels>
+</Interfaz>
