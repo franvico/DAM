@@ -2787,3 +2787,418 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.adobe.xmp
 2024-11-18 09:04:24,905 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-11-18 09:04:24,918 [Worker-16: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-11-18 09:04:24,919 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 19:17:30,358 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-18 19:22:26,498 [Worker-30: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:EjemploLogs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\pom.xml.
+2024-11-18 19:22:26,518 [Worker-9: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:EjemploLogs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\pom.xml.
+2024-11-18 19:22:26,717 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:26,719 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\main\resources
+2024-11-18 19:22:26,784 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:26,785 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\test\resources
+2024-11-18 19:22:28,113 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\pom.xml.
+2024-11-18 19:22:29,510 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:29,520 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 19:22:29,578 [Worker-14: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:29,579 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 19:22:29,953 [Worker-12: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:EjemploLogs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\pom.xml.
+2024-11-18 19:22:30,554 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:30,557 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 19:22:30,744 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:30,745 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 19:22:31,097 [Worker-20: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 19:22:31,536 [Worker-20: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1_FICHEROS_EJEMPLO1_JAXB: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1_FICHEROS_EJEMPLO1_JAXB/target/classes
+2024-11-18 19:22:31,660 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:31,661 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 19:22:31,667 [Worker-20: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1_FICHEROS_EJEMPLO1_JAXB: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1_FICHEROS_EJEMPLO1_JAXB/target/classes
+2024-11-18 19:22:31,711 [Worker-20: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:31,713 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\src\test\resources
+2024-11-18 19:22:31,717 [Worker-20: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1_FICHEROS_EJEMPLO1_JAXB: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1_FICHEROS_EJEMPLO1_JAXB/target/classes
+2024-11-18 19:22:32,992 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:tema1_FICHEROS_3_Logs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\pom.xml.
+2024-11-18 19:22:34,409 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:34,411 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\main\resources
+2024-11-18 19:22:34,510 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:34,513 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\test\resources
+2024-11-18 19:22:34,921 [Worker-31: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 19:22:35,474 [Worker-31: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:tema1_FICHEROS_3_Logs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\pom.xml.
+2024-11-18 19:22:35,780 [Worker-31: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-11-18 19:22:35,950 [Worker-19: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:35,951 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\main\resources
+2024-11-18 19:22:36,219 [Worker-19: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:22:36,220 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\test\resources
+2024-11-18 19:56:14,071 [Worker-32: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:56:14,077 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 19:56:14,179 [Worker-32: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 19:56:14,180 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:07:35,429 [Worker-37: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:07:35,432 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:07:35,540 [Worker-37: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:07:35,541 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:07:43,460 [Worker-34: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:07:43,462 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:07:43,558 [Worker-34: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:07:43,559 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:08:05,388 [Worker-37: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:08:05,389 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:08:05,479 [Worker-37: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:08:05,479 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:11:31,469 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-18 20:13:53,598 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:tema1_FICHEROS_3_Logs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\pom.xml.
+2024-11-18 20:13:53,893 [Worker-1: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:13:53,895 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\main\resources
+2024-11-18 20:13:53,939 [Worker-1: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:13:53,940 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\test\resources
+2024-11-18 20:14:15,929 [Worker-10: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:EjemploLogs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\pom.xml.
+2024-11-18 20:14:16,041 [Worker-10: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:14:16,041 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\main\resources
+2024-11-18 20:14:16,073 [Worker-10: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:14:16,074 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\test\resources
+2024-11-18 20:15:07,660 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\pom.xml.
+2024-11-18 20:15:07,819 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2024-11-18 20:15:07,933 [Worker-0: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 20:15:08,226 [Worker-0: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:08,232 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:15:08,290 [Worker-0: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:08,292 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:15:08,920 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 20:15:08,988 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:08,990 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:15:09,023 [Worker-0: Updating Maven Dependencies] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:15:09,031 [Worker-13: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:jar:sources:0.0.1-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-11-18 20:15:09,091 [Worker-5: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:09,093 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:15:09,447 [Worker-4: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:09,448 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:15:09,543 [Worker-4: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:15:09,667 [Worker-4: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:09,669 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\src\test\resources
+2024-11-18 20:15:09,673 [Worker-4: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:15:43,647 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 20:15:43,746 [Worker-12: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:15:43,814 [Worker-12: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:43,815 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:15:43,846 [Worker-12: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:43,847 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\src\test\resources
+2024-11-18 20:15:45,037 [Worker-17: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:15:45,055 [Worker-17: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:45,056 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:15:45,136 [Worker-17: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:15:45,137 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\src\test\resources
+2024-11-18 20:37:39,361 [Worker-39: Creating project "2dam.com"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Tema1.Repaso:2dam.com:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\2dam.com\pom.xml.
+2024-11-18 20:38:01,220 [Worker-39: Discover lifecycle mappings] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/Fran/AppData/Local/Temp/RemoteBundleDiscoveryStrategy17359930119021716291.tmp/org.eclipse.m2e.discovery.oss_catalog_2.x.jar_10103703641955851873.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2024-11-18 20:38:01,220 [Worker-39: Discover lifecycle mappings] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2024-11-18 20:41:52,238 [Worker-47: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 20:41:52,242 [Worker-47: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 0 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-11-18 20:42:21,355 [Worker-49: Compute Mappings for project Tema1.1_FICHEROS_EJ3_Logs] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:tema1_FICHEROS_3_Logs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\pom.xml.
+2024-11-18 20:44:57,113 [Worker-57: Creating project "dam2"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\dam2\pom.xml.
+2024-11-18 20:44:57,598 [Worker-60: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:44:57,601 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:44:57,736 [Worker-60: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:44:57,740 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:45:30,834 [Worker-60: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 20:45:30,851 [Worker-60: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:30,853 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:45:30,879 [Worker-60: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:30,880 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:45:47,195 [Worker-57: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 20:45:47,215 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:47,217 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:45:47,241 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:47,243 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:45:51,705 [Worker-57: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 20:45:51,715 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:51,717 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:45:51,757 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:51,759 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:45:57,193 [Worker-61: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 20:45:57,209 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:57,212 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:45:57,240 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:45:57,241 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:47:52,609 [Worker-59: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </artifactI> must match start tag name <artifactId> from line 16 (position: TEXT seen ...<artifactId>jaxb-impl</artifactI>... @16:39) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </artifactI> must match start tag name <artifactId> from line 16 (position: TEXT seen ...<artifactId>jaxb-impl</artifactI>... @16:39) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2151)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1430)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 common frames omitted
+2024-11-18 20:48:33,265 [Worker-59: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml: end tag name </artifactI> must match start tag name <artifactId> from line 21 (position: TEXT seen ...<artifactId>jaxb-core</artifactI>... @21:39)  @ line 21, column 39
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-parseable POM C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml: end tag name </artifactI> must match start tag name <artifactId> from line 21 (position: TEXT seen ...<artifactId>jaxb-core</artifactI>... @21:39)  @ line 21, column 39
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2024-11-18 20:48:33,357 [Worker-59: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:245)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:591)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </artifactI> must match start tag name <artifactId> from line 21 (position: TEXT seen ...<artifactId>jaxb-core</artifactI>... @21:39) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:96)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:74)
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readModel(IMavenToolbox.java:243)
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </artifactI> must match start tag name <artifactId> from line 21 (position: TEXT seen ...<artifactId>jaxb-core</artifactI>... @21:39) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:2151)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1418)
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1375)
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextText(MXParser.java:1335)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseDependency(MavenXpp3Reader.java:1430)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2321)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:623)
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:654)
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:93)
+	... 26 common frames omitted
+2024-11-18 20:48:40,976 [Worker-57: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 20:48:41,015 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:48:41,018 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:48:41,041 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:48:41,042 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:49:33,181 [Worker-59: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:49:33,183 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:49:33,262 [Worker-59: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:49:33,265 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:49:38,493 [Worker-60: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:49:38,495 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:49:38,639 [Worker-60: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:49:38,640 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:51:05,127 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:51:05,130 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:51:05,200 [Worker-57: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:51:05,201 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:51:36,859 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:51:36,861 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:51:36,945 [Worker-61: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:51:36,946 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:57:27,821 [Worker-59: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 20:57:27,955 [Worker-59: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:57:27,956 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 20:57:27,998 [Worker-59: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:57:28,000 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 20:58:58,875 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-18 20:59:00,221 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 20:59:00,920 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\pom.xml.
+2024-11-18 20:59:01,227 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:EjemploLogs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\pom.xml.
+2024-11-18 20:59:01,401 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 20:59:01,450 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:59:01,630 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:tema1_FICHEROS_3_Logs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\pom.xml.
+2024-11-18 20:59:02,481 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 5 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2024-11-18 20:59:03,227 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:03,230 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\main\resources
+2024-11-18 20:59:03,472 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:03,473 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\test\resources
+2024-11-18 20:59:04,626 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:04,629 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\main\resources
+2024-11-18 20:59:04,780 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:04,781 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\test\resources
+2024-11-18 20:59:05,922 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:05,930 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:59:06,401 [Worker-9: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:06,402 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:59:06,756 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:06,758 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\main\resources
+2024-11-18 20:59:06,974 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:06,977 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\test\resources
+2024-11-18 20:59:07,114 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:07,116 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:59:07,315 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:07,317 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 20:59:07,443 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:07,445 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 20:59:07,596 [Worker-3: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 20:59:08,010 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 20:59:08,013 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\src\test\resources
+2024-11-18 20:59:08,017 [Worker-3: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 21:06:09,640 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 21:06:09,983 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:tema1_FICHEROS_3_Logs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\pom.xml.
+2024-11-18 21:06:10,111 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2.com:EjemploLogs:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\pom.xml.
+2024-11-18 21:06:10,208 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\pom.xml.
+2024-11-18 21:06:10,367 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 21:06:10,456 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 21:06:10,472 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 21:06:10,811 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 5 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-11-18 21:06:11,062 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,063 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\main\resources
+2024-11-18 21:06:11,152 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,153 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs\src\test\resources
+2024-11-18 21:06:11,537 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,538 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\main\resources
+2024-11-18 21:06:11,617 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,618 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\EjemploLogs\src\test\resources
+2024-11-18 21:06:11,771 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,773 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 21:06:11,861 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,862 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 21:06:11,906 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:11,907 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:06:12,030 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:12,032 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 21:06:12,113 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:12,115 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 21:06:12,237 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:12,237 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\src\test\resources
+2024-11-18 21:06:44,129 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 21:06:44,364 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\pom.xml.
+2024-11-18 21:06:44,496 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-11-18 21:06:44,809 [Worker-35: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:44,811 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-11-18 21:06:44,874 [Worker-35: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:06:44,875 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB\src\test\resources
+2024-11-18 21:07:16,511 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-18 21:14:36,197 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 21:14:36,591 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 21:14:36,819 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-11-18 21:14:37,116 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:14:37,121 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:14:37,342 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:14:37,344 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 21:16:14,820 [Worker-28: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: dam2:dam2:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORS\pom.xml.
+2024-11-18 21:16:15,473 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:16:15,475 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:16:15,520 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:16:15,522 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 21:16:16,709 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:16:16,711 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:16:16,796 [Worker-28: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:16:16,797 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2024-11-18 21:20:15,189 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-11-18 21:20:45,686 [Worker-16: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 21:20:46,115 [Worker-16: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\target\classes\META-INF\maven\com.accesodatos\Tema1_FICHEROS_EJEMPLO1_JAXB\pom.xml.
+2024-11-18 21:20:46,312 [Worker-16: Update Maven projects configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 21:20:46,426 [Worker-16: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 21:20:46,447 [Worker-16: Update Maven projects configuration] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 21:20:47,069 [Worker-16: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 1,00 sec, update config takes 0,00 sec 
+2024-11-18 21:21:23,644 [Worker-25: https://github.com/eclipse-m2e/m2e-discovery-catalog/releases/download/2.x/catalog-2.x.xml] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {s}->https://github.com:443
+2024-11-18 21:23:14,706 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\ProyectoMavenNuevoConLibreríasJAXB\pom.xml.
+2024-11-18 21:23:14,894 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 21:23:14,911 [Worker-26: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 21:23:15,331 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:15,341 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:23:15,388 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:15,391 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\ProyectoMavenNuevoConLibreríasJAXB\src\test\resources
+2024-11-18 21:23:15,587 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:15,589 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:23:15,727 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:15,728 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\ProyectoMavenNuevoConLibreríasJAXB\src\test\resources
+2024-11-18 21:23:15,941 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\pom.xml.
+2024-11-18 21:23:16,141 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.dam2:Tema2_JDBC_1:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema2_JDBC_1\pom.xml.
+2024-11-18 21:23:16,165 [Worker-23: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/Tema1.3_XML_JAXB_EJ1: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT with classifier  to /Tema1.3_XML_JAXB_EJ1/target/classes
+2024-11-18 21:23:16,292 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:16,294 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:23:16,321 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:16,322 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources
+2024-11-18 21:23:16,528 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:16,529 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:23:16,608 [Worker-23: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:23:16,609 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources
+2024-11-18 21:24:14,352 [Worker-5: Discover lifecycle mappings] INFO  o.e.m.i.discovery.MavenDiscovery - No lifecyle mapping found at jar:file:/C:/Users/Fran/AppData/Local/Temp/RemoteBundleDiscoveryStrategy2070574315231367215.tmp/org.eclipse.m2e.discovery.oss_catalog_2.x.jar_3543612904788086297.jar!/lifecycle%2Forg.eclipse.m2e.discovery.lifecyclemapping.m2e-egit.xml
+2024-11-18 21:24:14,353 [Worker-5: Discover lifecycle mappings] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2024-11-18 21:24:14,560 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:24:14,565 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:24:14,659 [Worker-27: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:24:14,660 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources
+2024-11-18 21:45:19,595 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:45:19,598 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 21:45:19,682 [Worker-26: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 21:45:19,684 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources
+2024-11-18 22:07:36,832 [Worker-25: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 22:07:36,835 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 22:07:36,930 [Worker-25: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 22:07:36,931 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources
+2024-11-18 22:07:42,369 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-11-18 22:07:42,606 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.accesodatos:Tema1_FICHEROS_EJEMPLO1_JAXB:0.0.1-SNAPSHOT @ C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\pom.xml.
+2024-11-18 22:07:42,745 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0,00 sec, refresh facades takes 0,00 sec, update config takes 0,00 sec 
+2024-11-18 22:07:42,869 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 22:07:42,871 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 22:07:42,948 [Worker-36: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 22:07:42,948 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources
+2024-11-18 22:16:21,156 [Worker-25: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 22:16:21,160 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-11-18 22:16:21,303 [Worker-25: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-11-18 22:16:21,304 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS\src\test\resources

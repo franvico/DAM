@@ -22,7 +22,6 @@
     <fullyQualifiedTypeName name="ejercicioMatriculas.Matricula"/>
     <fullyQualifiedTypeName name="jakarta.xml.bind.Unmarshaller"/>
     <fullyQualifiedTypeName name="entidadesPedidos.Pedido"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="jakarta.xml.bind.JAXBContext"/>
     <fullyQualifiedTypeName name="entidadesPedidos.Producto"/>
     <fullyQualifiedTypeName name="clasesJAXB.Pedidos"/>
@@ -42,4 +41,5 @@
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="conexion.Conexion"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
