@@ -68,6 +68,15 @@ namespace Practica2_XML
                     Size = new System.Drawing.Size(width, height)
                 };
 
+                boton.Click += (sender, e) =>
+                {
+                    Button botonPresionado = sender as Button;
+                    if (botonPresionado != null)
+                    {
+                        MessageBox.Show($"¡Has presionado el botón {botonPresionado.Text}!");
+                    }
+                };
+
                 this.Controls.Add(boton);
             }
 
