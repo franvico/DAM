@@ -18,28 +18,41 @@ public class Libro {
 		this.gafas = gafas;
 	}
 	
-	public synchronized void setContenido(String contenido) {
+	// CONTROLAR CONTENIDO DEL LIBRO
+	public synchronized void setContenido(String contenido, String nombre) {
 		this.contenido += contenido;
+		System.out.println("El escritor " + nombre + " ha escrito.");
 	}
 	
 	public String getContenido() {
 		return contenido;
-	}	
+	}
+	
+	// CONTROLAR LECTORES
 	public synchronized int getNumLectores() {
 		return this.numLectores;
 	}
-	public void añadirLector() {
+	public synchronized void añadirLector(String nombre) {
+		System.out.println("Añadido lector " + nombre);
 		this.numLectores++;
 	}
-	public void restarLector() {
+	public synchronized void restarLector() {
 		this.numLectores--;
 	}
+	
+	// CONTROLAR ESCRITORES
 	public synchronized int getNumEscritores() {
 		return this.numEscritores;
 	}
-	public synchronized void añadirEscritor() {
+	public synchronized void añadirEscritor(String nombre) {
 		this.numEscritores++;
+		System.out.println("Añadido escritor " + nombre);
 	}
+	public synchronized void restarEscritor() {
+		this.numEscritores--;
+	}
+	
+	// OBTENER MONITORES PARA ESCRITORES Y LECTORES
 	public Object getBoli() {
 		return this.boli;
 	}
