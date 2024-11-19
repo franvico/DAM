@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <biblioteca>
-  
     <libro>
         <titulo>El Señor de los Anillos</titulo>
         <autor>J.R.R. Tolkien</autor>
-        <ejemplares_disponibles>5</ejemplares_disponibles>
+        <ejemplares_disponibles>4</ejemplares_disponibles>
     </libro>
     <libro>
         <titulo>Cien años de soledad</titulo>
@@ -16,7 +15,6 @@
         <autor>Ken Follet</autor>
         <ejemplares_disponibles>0</ejemplares_disponibles>
     </libro>
-
     <usuarios>
         <usuario>
             <nombre>Juan</nombre>
@@ -28,17 +26,20 @@
             <nombre>María</nombre>
             <libros_reservados>
                 <libro>Cien años de soledad</libro>
-				<libro>El Se�or de los Anillos</libro>
+                <libro>El Señor de los Anillos</libro>
             </libros_reservados>
         </usuario>
         <usuario>
             <nombre>Jorge</nombre>
-            <libros_reservados>
-            </libros_reservados>
+            <libros_reservados/>
         </usuario>
         <usuario>
             <nombre>Ricardo</nombre>
+            <libros_reservados/>
+        </usuario>
+        <usuario>
+            <nombre>Fran</nombre>
+            <libros_reservados/>
         </usuario>
     </usuarios>
-    
 </biblioteca>

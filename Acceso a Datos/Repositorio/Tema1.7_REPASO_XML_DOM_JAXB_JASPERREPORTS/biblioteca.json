@@ -1,0 +1,44 @@
+{"biblioteca": {
+    "libro": [
+        {
+            "titulo": "El Señor de los Anillos",
+            "ejemplares_disponibles": 4,
+            "autor": "J.R.R. Tolkien"
+        },
+        {
+            "titulo": "Cien años de soledad",
+            "ejemplares_disponibles": 3,
+            "autor": "Gabriel García Márquez"
+        },
+        {
+            "titulo": "Los Pilares de la Tierra",
+            "ejemplares_disponibles": 0,
+            "autor": "Ken Follet"
+        }
+    ],
+    "usuarios": {"usuario": [
+        {
+            "nombre": "Juan",
+            "libros_reservados": {"libro": "El Señor de los Anillos"}
+        },
+        {
+            "nombre": "María",
+            "libros_reservados": {"libro": [
+                "Cien años de soledad",
+                "El Señor de los Anillos"
+            ]}
+        },
+        {
+            "nombre": "Jorge",
+            "libros_reservados": ""
+        },
+        {
+            "nombre": "Ricardo",
+            "libros_reservados": ""
+        },
+        {
+            "nombre": "Fran",
+            "libros_reservados": ""
+        }
+    ]}
+}}

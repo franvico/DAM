@@ -42,4 +42,7 @@
     <fullyQualifiedTypeName name="conexion.Conexion"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="logica.Funciones_JAXB"/>
 </qualifiedTypeNameHistroy>
