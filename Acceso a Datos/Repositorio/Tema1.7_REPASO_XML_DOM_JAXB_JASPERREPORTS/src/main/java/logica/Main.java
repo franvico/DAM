@@ -29,7 +29,7 @@ import org.xml.sax.SAXException;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		
 		
 		Scanner scan = new Scanner(System.in);
