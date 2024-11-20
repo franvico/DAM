@@ -1,0 +1,14 @@
+package clases_JAXB;
+
+import java.util.ArrayList;
+
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class BibliotecaVideojuegos {
+	
+	private ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+	private ArrayList<Juego> juegos = new ArrayList<Juego>();
+	private ArrayList<Intercambio> intercambios = new ArrayList<Intercambio>();
+
+}

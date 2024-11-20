@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BibliotecaVideojuegos>
+    <usuarios/>
+    <juegos>
+        <juego>
+            <ID_Juego>101</ID_Juego>
+            <titulo>Super Mario Bros</titulo>
+            <consola>Nintendo</consola>
+            <estado>Usado</estado>
+        </juego>
+        <juego>
+            <ID_Juego>102</ID_Juego>
+            <titulo>Sonic the Hedgehog</titulo>
+            <consola>Sega Genesis</consola>
+            <estado>Nuevo</estado>
+        </juego>
+    </juegos>
+    <intercambios/>
+</BibliotecaVideojuegos>

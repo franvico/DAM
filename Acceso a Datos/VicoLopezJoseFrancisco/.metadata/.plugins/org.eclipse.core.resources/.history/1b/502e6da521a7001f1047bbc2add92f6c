@@ -1,0 +1,45 @@
+package logica;
+
+import java.util.Scanner;
+
+public class AppVideojuegos {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		boolean exit = false;
+		while(!exit) {
+			
+			System.out.println("\n----APLICACIÓN DE VIDEOJUEGOS----\n");
+			System.out.println("SELECCIONE UN OPCIÓN\n");
+			System.out.println("1. Intercambiado (XML_DOM)");
+			System.out.println("2. Eliminar usuario (XML_JAXB)");
+			System.out.println("3. Generar informe (JAPER_REPORTS)");
+
+			int opcion = scan.nextInt();
+			scan.nextLine();
+			
+			switch(opcion) {
+				case 1 :
+//					System.out.println("Introduzca el título del libro");
+//					String tituloBuscado = scan.nextLine();
+					Funcionalidades.intercambiado(opcion);					
+					break;
+				case 2 :
+					Funcionalidades.eliminaUsuario(opcion);
+					break;
+				case 3 :
+					Funcionalidades.generaInforme(opcion);
+					break;
+				default:
+                    System.out.println("Opción no válida.");
+			}
+				
+		}
+
+	}	
+	
+	
+
+}

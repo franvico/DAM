@@ -1,0 +1,54 @@
+package logica;
+
+import java.io.File;
+
+import clases_JAXB.BibliotecaVideojuegos;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
+
+public class Funcionalidades {
+	
+	static String rutaXML = "videojuegos.xml";
+	
+	public static void intercambiado(int idJuego) {
+		System.out.println("Intercambiando");
+	}
+	
+	public static void eliminaUsuario(int idUsuario) {
+		System.out.println("Eliminando");
+	}
+
+	public static void generaInforme(int idUsuario) {
+		System.out.println("Generando");
+	}
+	
+	// OBTENER FICHERO XML //
+		//////////////////////////////////////////////////////////////////////////////////////////
+		private static BibliotecaVideojuegos leerFicheroXML() throws JAXBException {
+			
+			File file = new File(rutaXML);
+			
+			JAXBContext jaxbContext = JAXBContext.newInstance(BibliotecaVideojuegos.class);
+			
+			Unmarshaller u = jaxbContext.createUnmarshaller();
+			
+			BibliotecaVideojuegos bibliotecaVideojuegos = (BibliotecaVideojuegos) u.unmarshal(file);
+			
+			return  bibliotecaVideojuegos;		
+		}
+		
+		// ESCRIBIR FICHERO XML //
+		//////////////////////////////////////////////////////////////////////////////////////////
+		private static void escribirFicheroXML(BibliotecaVideojuegos bibliotecaVideojuegos) throws JAXBException {
+			File file = new File(rutaXML);
+			
+			JAXBContext jaxbContext = JAXBContext.newInstance(BibliotecaVideojuegos.class);		
+			Marshaller marshall = jaxbContext.createMarshaller();
+			
+			marshall.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true); // para que saque una salida formateada
+			marshall.marshal(bibliotecaVideojuegos, file);
+			
+		}
+}

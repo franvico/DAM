@@ -1,0 +1,16 @@
+package logica;
+
+public class Funcionalidades {
+	
+	public static void intercambiado(int idJuego) {
+		
+	}
+	
+	public static void eliminaUsuario(int idUsuario) {
+		
+	}
+
+	public static void generaInforme(int idUsuario) {
+		
+	}
+}

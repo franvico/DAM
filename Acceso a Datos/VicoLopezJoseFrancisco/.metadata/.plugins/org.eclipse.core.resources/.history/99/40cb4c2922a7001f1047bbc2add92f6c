@@ -1,0 +1,16 @@
+package logica;
+
+public class Funcionalidades {
+	
+	public static void intercambiado(int idJuego) {
+		System.out.println("Intercambiando");
+	}
+	
+	public static void eliminaUsuario(int idUsuario) {
+		System.out.println("Eliminando");
+	}
+
+	public static void generaInforme(int idUsuario) {
+		System.out.println("Generando");
+	}
+}

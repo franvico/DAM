@@ -1,0 +1,126 @@
+package logica;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import clases_JAXB.BibliotecaVideojuegos;
+import clases_JAXB.Intercambio;
+import clases_JAXB.Usuario;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
+
+public class Funcionalidades {
+	
+	static String rutaXML = "videojuegos.xml";
+	
+	// FUNCIONES PRINCIPALES //
+	//////////////////////////////////////////////////////////////////////////////////////////
+	public static void intercambiado(int idJuego) {
+		System.out.println("Intercambiando");
+	}
+	
+	public static void eliminaUsuario(int idUsuario) throws JAXBException {
+		
+		BibliotecaVideojuegos bibliotecaVideojuegos = leerFicheroXML();
+		
+		Usuario usuario = comprobarQueUsuarioExiste(idUsuario, bibliotecaVideojuegos);
+		if(usuario != null) {
+			eliminarIntercambiosDelUsuario(idUsuario, bibliotecaVideojuegos);
+			eliminarUsuarioDelRegistro(usuario, bibliotecaVideojuegos);
+			escribirFicheroXML(bibliotecaVideojuegos);			
+		}
+		else {
+			System.out.println("El usuario introducido no exite");
+		}
+		
+		
+	}
+
+	public static void generaInforme(int idUsuario) {
+		System.out.println("Generando");
+	}
+	
+	// FUNCIONES ASOCIADAS AL EJERCICIO 2 : XML JAXB //
+	//////////////////////////////////////////////////////////////////////////////////////////
+	public static void eliminarUsuarioDelRegistro(Usuario usuario, BibliotecaVideojuegos biblioteca) {
+		Iterator<Usuario> iterator = biblioteca.getUsuarios().iterator();
+		while (iterator.hasNext()) {
+		    if (iterator.next().equals(usuario)) {
+		    	System.out.println(usuario);
+		        iterator.remove();
+		    }
+		}
+		System.out.println("Usuario eliminado con éxito\n");
+	}
+	
+	public static Usuario comprobarQueUsuarioExiste(int idUsuario, BibliotecaVideojuegos biblioteca) {
+		Usuario usuario = null;
+		
+		for(Usuario user : biblioteca.getUsuarios()) {
+			if(user.getId_usuario() == idUsuario) {
+				usuario = user;
+			}
+		}		
+		return usuario;
+	}
+	
+	public static void eliminarIntercambiosDelUsuario(int idUsuario, BibliotecaVideojuegos biblioteca) {
+		
+		ArrayList<Intercambio> intercambiosAEliminar = new ArrayList<Intercambio>();
+		
+		// añado los intercambios a eliminar
+		for(Intercambio intercambio : biblioteca.getIntercambios())
+		{
+			if((intercambio.getId_usuario_emisor() ==  idUsuario) || (intercambio.getId_usuario_receptor() == idUsuario)) {
+				intercambiosAEliminar.add(intercambio);
+			}
+		}
+		
+		if(intercambiosAEliminar.size() > 0) {
+			// los elimino
+			
+			Iterator<Intercambio> iterator = biblioteca.getIntercambios().iterator();
+			while (iterator.hasNext()) {
+			    if (intercambiosAEliminar.contains(iterator.next())) {
+			        iterator.remove();
+			    }
+			}
+			System.out.println("Los intercambios del usuario con ID: " + idUsuario + " han sido eliminados");			
+			
+		}
+		else {
+			System.out.println("No hay intercambios registrados para el usuario con ID: " + idUsuario);
+		}		
+	}
+	
+	// OBTENER FICHERO XML JAXB //
+	//////////////////////////////////////////////////////////////////////////////////////////
+	private static BibliotecaVideojuegos leerFicheroXML() throws JAXBException {
+		
+		File file = new File(rutaXML);
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(BibliotecaVideojuegos.class);
+		
+		Unmarshaller u = jaxbContext.createUnmarshaller();
+		
+		BibliotecaVideojuegos bibliotecaVideojuegos = (BibliotecaVideojuegos) u.unmarshal(file);
+		
+		return  bibliotecaVideojuegos;		
+	}
+	
+	// ESCRIBIR FICHERO XML JAXB //
+	//////////////////////////////////////////////////////////////////////////////////////////
+	private static void escribirFicheroXML(BibliotecaVideojuegos bibliotecaVideojuegos) throws JAXBException {
+		File file = new File(rutaXML);
+		
+		JAXBContext jaxbContext = JAXBContext.newInstance(BibliotecaVideojuegos.class);		
+		Marshaller marshall = jaxbContext.createMarshaller();
+		
+		marshall.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true); // para que saque una salida formateada
+		marshall.marshal(bibliotecaVideojuegos, file);
+		
+	}
+}
