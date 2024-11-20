@@ -30,7 +30,7 @@ public class Lector implements Runnable{
 			libro.restarLector();
 			// añado este método porque en ocasiones, si queda una última tanda de lectores por despertar,
 			// estos no se van a despertar porque no habrá un escritor que los despierte.
-			despertarLectores();
+			//despertarLectores();
 			
 		}
 		
