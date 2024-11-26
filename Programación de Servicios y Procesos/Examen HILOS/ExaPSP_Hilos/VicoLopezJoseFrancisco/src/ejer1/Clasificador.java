@@ -1,0 +1,84 @@
+package ejer1;
+
+public class Clasificador implements Runnable {
+	
+
+	Almacen almacen;
+	Object monitor1;
+	Object monitor2;
+	Object monitorPares;
+	Object monitorImpares;
+	
+	public Clasificador(Almacen almacen,Object monitor1, Object monitor2,Object monitorPares, Object monitorImpares) {
+		this.almacen = almacen;
+		this.monitor1 = monitor1;
+		this.monitor2 = monitor2;
+		this.monitorPares = monitorPares;
+		this.monitorImpares = monitorImpares;
+	}
+
+	// el método clasifica recibe un número positivo y devuelve
+	// true-> si el número es par
+	// false-> si el número es impar
+	// NO SE PUEDE MODIFICAR
+	public boolean clasifica(int numero) {
+		long init = System.currentTimeMillis();
+		double tiempoDeClasificacion = (Math.random() * 1000) + 500;
+		while (System.currentTimeMillis() < init + tiempoDeClasificacion) {
+		}
+		return numero % 2 == 0;
+	}
+
+	@Override
+	public void run() {
+		while (true) {
+			// pilla el número que tiene que clasificar desde el almacenPrincipal
+			synchronized (monitor1) {
+				if(almacen.getAlmacenPrincipal().size() > 0) {
+					int actual = extraeNumeroAlmacenPrincipal();	
+					// CAMBIO 6
+					// depierto al productor para que compruebe si ha caído el producto por debajo del 30%
+					synchronized (monitor1) {
+						monitor1.notifyAll();	
+					}			
+
+					// lo clasifica
+					if (clasifica(actual)) {
+						// si es par, lo inserta en los pares
+						synchronized (monitorPares) {
+							procesaPar(actual);	
+						}
+						
+					} else {
+						// si es impar lo inserta en los impares
+						synchronized (monitorImpares) {
+							procesaImpar(actual);	
+						}
+						
+					}
+				}
+			}
+			
+		}
+
+	}
+
+	private void procesaImpar(int actual) {
+		almacen.insertaImpares(actual);
+	}
+
+	private void procesaPar(int actual) {
+		almacen.insertaPares(actual);
+	}
+
+	private int extraeNumeroAlmacenPrincipal() {
+
+		// CAMBIO 5
+		// SECCIÓN CRÍTICA CON PROD Y CON LOS OTROS CLASIFICADORES
+		synchronized (monitor1) {
+			
+			return almacen.extraeAlmacenPrincipal();
+		}
+		
+	}
+}
