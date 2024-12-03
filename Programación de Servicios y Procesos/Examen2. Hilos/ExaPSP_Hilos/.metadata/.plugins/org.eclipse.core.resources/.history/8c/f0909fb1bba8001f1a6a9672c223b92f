@@ -1,0 +1,42 @@
+package ejer1;
+
+import java.util.ArrayList;
+
+public class Almacen {
+	private ArrayList<Integer> almacenPrincipal;
+	private ArrayList<Integer> pares;
+	private ArrayList<Integer> impares;
+	int capacidadAlmacen;
+
+	public Almacen(int capacidad) {
+		almacenPrincipal = new ArrayList<Integer>();		
+		pares = new ArrayList<Integer>();
+		impares = new ArrayList<Integer>();
+		capacidadAlmacen = capacidad;
+	}
+
+	public void insertaAlmacenPrincipal(int n) {
+	}
+
+	public int extraeAlmacenPrincipal() {
+		return 0;
+	}
+
+	public void insertaPares(int n) {
+	}
+
+	public int extraePares() {
+		return 0;
+	}
+
+	public void insertaImpares(int n) {
+	}
+
+	public int extraeImpares() {
+		return 0;
+	}
+	
+	public ArrayList getAlmacenPrincipal() {
+		return this.almacenPrincipal;
+	}
+}

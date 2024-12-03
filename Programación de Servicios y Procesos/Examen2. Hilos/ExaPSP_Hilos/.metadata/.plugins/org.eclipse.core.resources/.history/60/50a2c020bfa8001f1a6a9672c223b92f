@@ -1,0 +1,57 @@
+package ejer1;
+
+public class Cons implements Runnable {
+	private boolean consumePares;
+	
+	Almacen almacen;
+	Object monitor2;
+	Object monitorParImpar;
+	
+
+	// el método consumir consume un número
+	// NO SE PUEDE MODIFICAR
+	public void consume(int numero) {
+		long init = System.currentTimeMillis();
+		double tiempoDeConsumición = (Math.random() * 750) + 250;
+		while (System.currentTimeMillis() < init + tiempoDeConsumición) {
+		}
+		System.out.println(Thread.currentThread().getName() + " ha consumido " + numero);
+	}
+
+	public Cons(Almacen almacen, Object monitor2,boolean consumePares, Object monitorPares, Object monitorImpares) {
+		this.almacen = almacen;
+		this.monitor2 = monitor2;
+		this.consumePares = consumePares;
+		if(consumePares) {
+			this.monitorParImpar = monitorPares;
+		}
+		else {
+			this.monitorParImpar = monitorImpares;
+		}
+	}
+
+	@Override
+	public void run() {
+		while (true) {
+			// si soy un consumadores de pares
+			if (consumePares) {
+				// entonces extraigo desde los pares y consumo
+				consume(extraePares());
+			} else {
+				// si no extraigo desde los impares y consumo
+				consume(extraeImpares());
+			}
+		}
+
+	}
+
+	private int extraeImpares() {
+
+		return 0;
+	}
+
+	private int extraePares() {
+
+		return 0;
+	}
+}

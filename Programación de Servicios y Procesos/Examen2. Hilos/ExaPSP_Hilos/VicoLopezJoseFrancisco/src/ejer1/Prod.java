@@ -1,0 +1,74 @@
+package ejer1;
+
+public class Prod implements Runnable {
+	static int nextPar = 0;
+	static int nextImpar = -1;
+
+	Almacen almacen;
+	Object monitor1;
+	
+	public Prod(Almacen almacen, Object monitor1) {
+		this.almacen = almacen;
+		this.monitor1 = monitor1;
+	}
+
+	// el método produce crea y devuelve un número
+	// NO SE PUEDE MODIFICAR
+	public int produce() {
+		nextPar += 2;
+		nextImpar += 2;
+		long init = System.currentTimeMillis();
+		double tiempoDeProduccion = (Math.random() * 750) + 250;
+		while (System.currentTimeMillis() < init + tiempoDeProduccion) {
+		}
+		double d = Math.random();
+		return (d < 0.5) ? nextPar : nextImpar;
+	}
+
+	@Override
+	public void run() {
+		while (true) {
+			// SECCIÓN CRÍTICA 1
+			// aqui leer si el almacén principal esta a menos de 30%
+			// tiene que ser atómico sobre monitor1 porque los Clasificadores también acceden a este recurso			
+			synchronized (monitor1) {
+				while(!almacenPrincipalNecesitaReponer()) {
+					try {
+						monitor1.wait();
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				
+			}
+			
+			// NO ES SECCIÓN CRÍTICA
+			int n = produce();
+			
+			// SECCIÓN CRÍTICA 2
+			// no necesito sincronizar la producción de n por lo que suelto el monitor
+			// pero si necesito volver a cogerlo para procesarlo
+			// son dos secciones críticas diferentes y entre medias se produce el número
+			// permitiendo trabajar a los Clasificadores hasta que proceso el número
+			synchronized (monitor1) {
+				procesaProducto(n);	
+			}
+			
+			
+		}
+	}
+
+	private void procesaProducto(int n) {
+		// aqui meto el número en el almacén
+		almacen.insertaAlmacenPrincipal(n);		
+
+	}
+	
+	private boolean almacenPrincipalNecesitaReponer() {		
+		if(almacen.getAlmacenPrincipal().size() < (almacen.capacidadAlmacen * 30/100)) {
+			return true;
+		}
+		return false;
+	}
+}

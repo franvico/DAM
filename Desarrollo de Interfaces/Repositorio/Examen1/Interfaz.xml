@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Interfaz>
+	<Buttons>
+		<Button>
+			<Name>btmAñadirJuego</Name>
+			<Text>Añadir Juego</Text>
+			<LocationX>100</LocationX>
+			<LocationY>150</LocationY>
+		</Button>
+
+		<Button>
+			<Name>btnModificarJuego</Name>
+			<Text>Modificar Juego</Text>
+			<LocationX>100</LocationX>
+			<LocationY>200</LocationY>
+		</Button>
+
+		<Button>
+			<Name>btnEliminarJuego</Name>
+			<Text>Eliminar Juego</Text>
+			<LocationX>100</LocationX>
+			<LocationY>250</LocationY>
+		</Button>
+
+		
+	</Buttons>
+	
+	<Labels>
+		<Label>
+			<Name>lblTituloCatalogo</Name>
+			<Text>Gestión de catálogo</Text>
+			<LocationX>300</LocationX>
+			<LocationY>50</LocationY>
+			<Width>200</Width>
+			<Height>30</Height>
+		</Label>
+		<Label>
+			<Name>lblEleccion</Name>
+			<Text>Elija una opción</Text>
+			<LocationX>100</LocationX>
+			<LocationY>100</LocationY>
+			<Width>200</Width>
+			<Height>30</Height>
+		</Label>
+	</Labels>
+
+	<TextFields>
+
+		<TextField>
+			<Name>txtTitulo</Name>
+			<Text>Titulo</Text>
+			<LocationX>250</LocationX>
+			<LocationY>150</LocationY>
+			<Width>200</Width>
+			<Height>25</Height>
+		</TextField>
+
+		<TextField>
+			<Name>txtGenero</Name>
+			<Text>Genero</Text>
+			<LocationX>250</LocationX>
+			<LocationY>200</LocationY>
+			<Width>200</Width>
+			<Height>25</Height>
+		</TextField>
+
+		<TextField>
+			<Name>txtDesarrollador</Name>
+			<Text>Desarrollador</Text>
+			<LocationX>250</LocationX>
+			<LocationY>250</LocationY>
+			<Width>200</Width>
+			<Height>25</Height>
+		</TextField>
+
+		<TextField>
+			<Name>txtPrecio</Name>
+			<Text>0</Text>
+			<LocationX>250</LocationX>
+			<LocationY>300</LocationY>
+			<Width>100</Width>
+			<Height>25</Height>
+		</TextField>
+	</TextFields>
+</Interfaz>
