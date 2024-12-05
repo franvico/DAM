@@ -17,7 +17,7 @@
         android:textColor="#E42F2F"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -25,10 +25,9 @@
         android:id="@+id/textView3"
         android:layout_width="120dp"
         android:layout_height="36dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="C/ de Abizanda, 70 Madrid"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -38,7 +37,7 @@
         android:layout_marginTop="20dp"
         android:text="Visita de profesoras del instituto Fos Nord de Munich Por tic.ies.rosachacel.madrid en Novedades El viernes 1 de Marzo recibimos la visita de varias profesoras de la Escuela Profesional Fos Nord de Munich, en el marco de una gira organizada por la Red Xarxa FP (https://www.xarxafp.org/) por institutos de Formación Profesional de Madrid. Las profesoras fueron acompañadas por Deina Fortes y María Jesús Cervero, coordinadoras de movilidad de los Ayuntamientos de Madrid y Munich respectivamente."
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -46,7 +45,6 @@
         android:id="@+id/buttonSiguiente"
         android:layout_width="129dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="32dp"
         android:background="#FFFFFF"
         android:backgroundTint="#B15E5E"
         android:lineSpacingExtra="8sp"
@@ -56,14 +54,13 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:iconTint="#D53434"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/buttonAnterior" />
 
     <Button
         android:id="@+id/buttonAnterior"
         android:layout_width="137dp"
         android:layout_height="45dp"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:background="#A24949"
         android:backgroundTint="#B15E5E"
@@ -74,7 +71,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:iconTint="#D53434"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
@@ -93,10 +90,4 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="410dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

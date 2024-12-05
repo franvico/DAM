@@ -55,9 +55,8 @@ public class Main {
 			System.out.println("10. Buscar libro por título (JSON)"); // no implementada
 			System.out.println("11. Añadir nuevo libro (JSON)");
 			System.out.println("12. Eliminar libro por título (JSON)");
-			System.out.println("13. Generar PDF con los datos de un libro dado su título (JASPERREPORTS)");
+			System.out.println("13. Generar PDF con los datos de un libro dado su título (JASPERREPORTS)"); // no implementada
 			System.out.println("14. Salir");
-			// añadir opciones (u otro proyecto) con json
 			
 			int opcion = scan.nextInt();
 			scan.nextLine();
@@ -101,6 +100,9 @@ public class Main {
 					break;
 				case 12 :
 					Funciones_JSON.eliminarLibroPorTitulo();
+					break;
+				case 13 :
+					System.out.println("FUNCIÓN NO IMPLEMENTADA");
 					break;
 				default:
                     System.out.println("Opción no válida.");
