@@ -1,0 +1,3 @@
+variable de entorno JAVA_HOME jdk
+descargar apache tomcat
+decargar eclipse web developer
