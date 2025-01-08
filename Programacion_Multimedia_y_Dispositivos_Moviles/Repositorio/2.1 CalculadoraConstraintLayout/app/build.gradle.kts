@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.calculadoraconstraintlayout"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.calculadoraconstraintlayout"
