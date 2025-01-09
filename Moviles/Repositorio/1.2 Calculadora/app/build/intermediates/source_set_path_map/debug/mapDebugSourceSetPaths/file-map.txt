@@ -1,0 +1,52 @@
+com.example.layouts.app-activity-compose-1.9.2-0 C:\Users\Fran\.gradle\caches\transforms-4\051e3fcc2290bd89c51d83aaf8286ae7\transformed\activity-compose-1.9.2\res
+com.example.layouts.app-lifecycle-runtime-ktx-release-1 C:\Users\Fran\.gradle\caches\transforms-4\0cba06092f0d606a7dadade1c4407a8f\transformed\lifecycle-runtime-ktx-release\res
+com.example.layouts.app-animation-core-release-2 C:\Users\Fran\.gradle\caches\transforms-4\13654ac21e5590a429a9fb23c9e6b962\transformed\animation-core-release\res
+com.example.layouts.app-material3-release-3 C:\Users\Fran\.gradle\caches\transforms-4\18024369bfbf19fbf94e6c2a3cbd4127\transformed\material3-release\res
+com.example.layouts.app-animation-release-4 C:\Users\Fran\.gradle\caches\transforms-4\2274bf59a07be4ef27272667a454ed29\transformed\animation-release\res
+com.example.layouts.app-lifecycle-viewmodel-savedstate-2.8.6-5 C:\Users\Fran\.gradle\caches\transforms-4\24f5ac78898b195dc75ae7eab4a713c7\transformed\lifecycle-viewmodel-savedstate-2.8.6\res
+com.example.layouts.app-material-icons-core-release-6 C:\Users\Fran\.gradle\caches\transforms-4\26eb0e7acb6ddc29f6222d9e8a35b96a\transformed\material-icons-core-release\res
+com.example.layouts.app-lifecycle-livedata-2.8.6-7 C:\Users\Fran\.gradle\caches\transforms-4\2c8ca7e8212f13a0ab5aa4995ecafe2a\transformed\lifecycle-livedata-2.8.6\res
+com.example.layouts.app-foundation-layout-release-8 C:\Users\Fran\.gradle\caches\transforms-4\3cce4c4bdff687f1aa14317cc447cc14\transformed\foundation-layout-release\res
+com.example.layouts.app-runtime-saveable-release-9 C:\Users\Fran\.gradle\caches\transforms-4\4080260889b5b0da087ddad60ab55d62\transformed\runtime-saveable-release\res
+com.example.layouts.app-lifecycle-viewmodel-release-10 C:\Users\Fran\.gradle\caches\transforms-4\41db7f9c32c7cbab522b708bccdafb4e\transformed\lifecycle-viewmodel-release\res
+com.example.layouts.app-core-1.13.1-11 C:\Users\Fran\.gradle\caches\transforms-4\4a00873bc285ef36af8f604dbc1806f3\transformed\core-1.13.1\res
+com.example.layouts.app-lifecycle-runtime-release-12 C:\Users\Fran\.gradle\caches\transforms-4\53929a09c71407fd939636feefbb29aa\transformed\lifecycle-runtime-release\res
+com.example.layouts.app-annotation-experimental-1.4.0-13 C:\Users\Fran\.gradle\caches\transforms-4\58b8a3061a385bf8921be4e063ff5804\transformed\annotation-experimental-1.4.0\res
+com.example.layouts.app-appcompat-resources-1.7.0-14 C:\Users\Fran\.gradle\caches\transforms-4\5eb5ea0d99bb8e0d26fff54888847bd5\transformed\appcompat-resources-1.7.0\res
+com.example.layouts.app-ui-tooling-release-15 C:\Users\Fran\.gradle\caches\transforms-4\64d72562e78bbfafd91cc3fd9ccacbbe\transformed\ui-tooling-release\res
+com.example.layouts.app-ui-geometry-release-16 C:\Users\Fran\.gradle\caches\transforms-4\677f7b24d91d041db31327e56a7531d3\transformed\ui-geometry-release\res
+com.example.layouts.app-customview-poolingcontainer-1.0.0-17 C:\Users\Fran\.gradle\caches\transforms-4\69cec53da6608ef6086d21bc780dd760\transformed\customview-poolingcontainer-1.0.0\res
+com.example.layouts.app-ui-test-manifest-1.6.6-18 C:\Users\Fran\.gradle\caches\transforms-4\6e938656152b7018d65ef236a54aefd8\transformed\ui-test-manifest-1.6.6\res
+com.example.layouts.app-foundation-release-19 C:\Users\Fran\.gradle\caches\transforms-4\6f1af420613cf40729b56ad4bef2f5dd\transformed\foundation-release\res
+com.example.layouts.app-ui-tooling-data-release-20 C:\Users\Fran\.gradle\caches\transforms-4\7a34a06627b5c1ea9aa56a3f66507efb\transformed\ui-tooling-data-release\res
+com.example.layouts.app-runtime-release-21 C:\Users\Fran\.gradle\caches\transforms-4\81d3ee2b6fb93cbbd64d15463509ead5\transformed\runtime-release\res
+com.example.layouts.app-activity-1.9.2-22 C:\Users\Fran\.gradle\caches\transforms-4\822ec505c5e984a336072b4096a1e472\transformed\activity-1.9.2\res
+com.example.layouts.app-ui-graphics-release-23 C:\Users\Fran\.gradle\caches\transforms-4\8dd1ad86c4b7731245ccd6231520d2b9\transformed\ui-graphics-release\res
+com.example.layouts.app-lifecycle-livedata-core-2.8.6-24 C:\Users\Fran\.gradle\caches\transforms-4\90507ee4de48b20783a5172e34d54436\transformed\lifecycle-livedata-core-2.8.6\res
+com.example.layouts.app-material-release-25 C:\Users\Fran\.gradle\caches\transforms-4\90ea05e3bb52c09a08e63df2ff5c663e\transformed\material-release\res
+com.example.layouts.app-savedstate-1.2.1-26 C:\Users\Fran\.gradle\caches\transforms-4\919e14ea01053dcbc5b205af5b6fa95a\transformed\savedstate-1.2.1\res
+com.example.layouts.app-lifecycle-livedata-core-ktx-2.8.6-27 C:\Users\Fran\.gradle\caches\transforms-4\98fb4d54285f342df096b003aac44ef9\transformed\lifecycle-livedata-core-ktx-2.8.6\res
+com.example.layouts.app-emoji2-1.3.0-28 C:\Users\Fran\.gradle\caches\transforms-4\a77c96a6a2ac668328c179a4b8697163\transformed\emoji2-1.3.0\res
+com.example.layouts.app-lifecycle-viewmodel-ktx-2.8.6-29 C:\Users\Fran\.gradle\caches\transforms-4\b262d76d480576f4d2e582c120432483\transformed\lifecycle-viewmodel-ktx-2.8.6\res
+com.example.layouts.app-fragment-1.5.4-30 C:\Users\Fran\.gradle\caches\transforms-4\b39d133e4cd3b0e6d4f3e87fb50ea3f3\transformed\fragment-1.5.4\res
+com.example.layouts.app-ui-release-31 C:\Users\Fran\.gradle\caches\transforms-4\b63df97d8a5a83997b2d90bd4f23efcb\transformed\ui-release\res
+com.example.layouts.app-startup-runtime-1.1.1-32 C:\Users\Fran\.gradle\caches\transforms-4\ba224c6004e8e3bba66320fa9a5d525a\transformed\startup-runtime-1.1.1\res
+com.example.layouts.app-ui-util-release-33 C:\Users\Fran\.gradle\caches\transforms-4\bac47d5ed0129fc8a7f3d0f1302cb2b9\transformed\ui-util-release\res
+com.example.layouts.app-emoji2-views-helper-1.3.0-34 C:\Users\Fran\.gradle\caches\transforms-4\bd3dafab084b5495b86518fd3032bce5\transformed\emoji2-views-helper-1.3.0\res
+com.example.layouts.app-appcompat-1.7.0-35 C:\Users\Fran\.gradle\caches\transforms-4\c2d967ab04dbe4dca6c5d499abf40746\transformed\appcompat-1.7.0\res
+com.example.layouts.app-profileinstaller-1.3.1-36 C:\Users\Fran\.gradle\caches\transforms-4\c35f3237c78d99d30f660d754894909c\transformed\profileinstaller-1.3.1\res
+com.example.layouts.app-ui-unit-release-37 C:\Users\Fran\.gradle\caches\transforms-4\c497f38797dfc6e6094fea5d0930f1ad\transformed\ui-unit-release\res
+com.example.layouts.app-material-ripple-release-38 C:\Users\Fran\.gradle\caches\transforms-4\d1359d0ece15175f8b79ad02e43e1e46\transformed\material-ripple-release\res
+com.example.layouts.app-core-runtime-2.2.0-39 C:\Users\Fran\.gradle\caches\transforms-4\d393c37dc492e58a8ff7a2ff6fd63f23\transformed\core-runtime-2.2.0\res
+com.example.layouts.app-core-ktx-1.13.1-40 C:\Users\Fran\.gradle\caches\transforms-4\d53bbcafeb9e06ec2ded5673975d5cc8\transformed\core-ktx-1.13.1\res
+com.example.layouts.app-activity-ktx-1.9.2-41 C:\Users\Fran\.gradle\caches\transforms-4\e0446ece6c5d8ed95521a7aceae049fd\transformed\activity-ktx-1.9.2\res
+com.example.layouts.app-lifecycle-process-2.8.6-42 C:\Users\Fran\.gradle\caches\transforms-4\e4da9532135fb09f37a0313c773cabda\transformed\lifecycle-process-2.8.6\res
+com.example.layouts.app-savedstate-ktx-1.2.1-43 C:\Users\Fran\.gradle\caches\transforms-4\ea3a40d7c3e91b47ee1cf1fdd2541712\transformed\savedstate-ktx-1.2.1\res
+com.example.layouts.app-ui-text-release-44 C:\Users\Fran\.gradle\caches\transforms-4\f899bd59746a970f155c8ac808c48201\transformed\ui-text-release\res
+com.example.layouts.app-ui-tooling-preview-release-45 C:\Users\Fran\.gradle\caches\transforms-4\f9e848938b58cf31b89bb57ed2ced4ca\transformed\ui-tooling-preview-release\res
+com.example.layouts.app-resValues-46 C:\Users\Fran\Desktop\DAM\Programacion_Multimedia_y_Dispositivos_Moviles\Repositorio\1.2 Calculadora\app\build\generated\res\resValues\debug
+com.example.layouts.app-packageDebugResources-47 C:\Users\Fran\Desktop\DAM\Programacion_Multimedia_y_Dispositivos_Moviles\Repositorio\1.2 Calculadora\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.layouts.app-packageDebugResources-48 C:\Users\Fran\Desktop\DAM\Programacion_Multimedia_y_Dispositivos_Moviles\Repositorio\1.2 Calculadora\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.layouts.app-debug-49 C:\Users\Fran\Desktop\DAM\Programacion_Multimedia_y_Dispositivos_Moviles\Repositorio\1.2 Calculadora\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.layouts.app-debug-50 C:\Users\Fran\Desktop\DAM\Programacion_Multimedia_y_Dispositivos_Moviles\Repositorio\1.2 Calculadora\app\src\debug\res
+com.example.layouts.app-main-51 C:\Users\Fran\Desktop\DAM\Programacion_Multimedia_y_Dispositivos_Moviles\Repositorio\1.2 Calculadora\app\src\main\res

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputNombre"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@android:drawable/ic_menu_my_calendar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="      Nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTelefono"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="bottom"
+        app:layout_constraintStart_toStartOf="@+id/inputNombre"
+        app:layout_constraintTop_toBottomOf="@+id/inputNombre"
+        app:startIconDrawable="@android:drawable/stat_sys_phone_call"
+        app:startIconTint="#B19A9A">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="      Telefono" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputCorreo"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="bottom"
+        app:layout_constraintStart_toStartOf="@+id/inputTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/inputTelefono"
+        app:startIconDrawable="@android:drawable/sym_action_email"
+        app:startIconTint="#A49595">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="      Correo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonAceptar"
+        style="null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toEndOf="@+id/inputCorreo"
+        app:layout_constraintTop_toTopOf="@+id/buttonCancelar"
+        app:rippleColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        style="null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cancelar"
+        app:layout_constraintStart_toStartOf="@+id/inputCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/inputCorreo"
+        app:rippleColor="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
