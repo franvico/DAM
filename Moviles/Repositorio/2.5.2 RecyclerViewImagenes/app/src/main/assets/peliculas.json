@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Avengers: Infinity War",
+    "fecha": "2018",
+    "imagen": "avengers",
+    "sinopsis": "Los Vengadores se unen con los Guardianes de la Galaxia para detener a Thanos, quien busca reunir las Gemas del Infinito y destruir la mitad del universo."
+  },
+  {
+    "titulo": "Spider-Man: Homecoming",
+    "fecha": "2017",
+    "imagen": "spiderman",
+    "sinopsis": "Peter Parker, un joven estudiante de secundaria, lucha por equilibrar su vida como superhéroe y su vida escolar mientras enfrenta al villano Vulture."
+  },
+  {
+    "titulo": "Padmaavat",
+    "fecha": "2018",
+    "imagen": "padmaavat",
+    "sinopsis": "Basada en una leyenda india, la historia de Padmavati, una reina que lucha por proteger su honor y su reino, mientras el sultán Alauddin Khilji intenta conquistarlo."
+  },
+  {
+    "titulo": "Black Panther",
+    "fecha": "2018",
+    "imagen": "blackpanther",
+    "sinopsis": "T'Challa regresa a Wakanda, su hogar secreto y avanzado tecnológicamente, tras la muerte de su padre para asumir el trono y enfrentar una amenaza interna."
+  },
+  {
+    "titulo": "Rampage",
+    "fecha": "2018",
+    "imagen": "rampage",
+    "sinopsis": "Un primatólogo se ve envuelto en una crisis mundial cuando un experimento genético transformó a un gorila en una criatura gigantesca, causando caos y destrucción."
+  }
+]
