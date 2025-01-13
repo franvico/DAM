@@ -1,4 +1,7 @@
 # JDBC
+0. Crear proyecto
+    - File -> new -> Dynamic Web Project
+    - Clic derecho en el proyecto -> Configure -> Convert to Maven Project
 1. Acceso a BBDD desde Java -> API JDBC -> java.sql<br>
     Driver depende del gestor de BBDD (oracle, mysql...) -> se incorporan las clases de ese driver al proyecto añadiendo el .jar de ese driver
 
