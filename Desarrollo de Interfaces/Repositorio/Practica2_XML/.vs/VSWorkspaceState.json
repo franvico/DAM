@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Practica2_XML",
+    "\\Practica2_XML\\Practica2_XML",
+    "\\Practica2_XML\\Practica2_XML\\bin\\Debug"
   ],
+  "SelectedNode": "\\Practica2_XML\\Practica2_XML\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
