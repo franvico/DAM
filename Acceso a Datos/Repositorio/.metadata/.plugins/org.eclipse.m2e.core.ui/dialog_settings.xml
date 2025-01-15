@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Alumno\Desktop\DAM\Acceso a Datos\Repositorio\Tema1.3_XML_JAXB_EJ1\src\main\java\logica\MainMatriculas.java"/>
 			<item value="C:\Users\Fran\Desktop\DAM\Acceso a Datos\Repositorio\tema1_FICHEROS_3_Logs"/>
 			<item value="C:\Users\Alumno\Desktop\DAM\Acceso a Datos\Repositorio\Tema1_FICHEROS_EJEMPLO1_JAXB"/>
 			<item value="C:\Users\Alumno\Desktop\DAM\Acceso a Datos\Repositorio"/>
@@ -51,16 +52,18 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.dam2"/>
 			<item value="dam2"/>
 			<item value="Tema1.Repaso"/>
-			<item value="com.dam2"/>
 			<item value="dam"/>
 		</list>
 		<list key="name">
+			<item value="Tema3.1_EjemploHibernate"/>
 			<item value="Tema1.7_REPASO_XML_DOM_JAXB_JASPERREPORTS"/>
 			<item value="Tema2_JDBC_1"/>
 		</list>
 		<list key="artifactId">
+			<item value="Tema3.1_EjemploHibernate"/>
 			<item value="dam2"/>
 			<item value="2dam.com"/>
 			<item value="Tema2_JDBC_1"/>
