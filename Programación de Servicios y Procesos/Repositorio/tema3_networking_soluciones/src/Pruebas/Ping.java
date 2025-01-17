@@ -23,11 +23,11 @@ public class Ping {
 			ds.send(datagrama);
 			Thread.sleep(1000);
 			if(!msg.equals("FINE")) {
-			DatagramPacket d=new DatagramPacket(rec,rec.length);
-			ds.receive(d);
-			recibido=new String(rec);
-			System.out.println("PING RECIBE:"+recibido);
-			random=(int)(Math.random()*10);
+				DatagramPacket d=new DatagramPacket(rec,rec.length);
+				ds.receive(d);
+				recibido=new String(rec);
+				System.out.println("PING RECIBE:"+recibido);
+				random=(int)(Math.random()*10);
 			}
 			}
 			if(msg.equals("FINE")) {
