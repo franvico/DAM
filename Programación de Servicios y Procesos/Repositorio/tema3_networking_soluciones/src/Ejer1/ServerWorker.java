@@ -16,18 +16,18 @@ public class ServerWorker implements Runnable {
 	BufferedWriter bwCliente;
 	
 	public ServerWorker(Socket s)
-	{this.s=s;
-	InputStream is;
-	try {
-		is = s.getInputStream();
-		OutputStream os = s.getOutputStream();
-		brCliente = new BufferedReader(new InputStreamReader(is));
-		bwCliente = new BufferedWriter(new OutputStreamWriter(os));
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	
+	{
+		this.s=s;
+		InputStream is;
+		try {
+			is = s.getInputStream();
+			OutputStream os = s.getOutputStream();
+			brCliente = new BufferedReader(new InputStreamReader(is));
+			bwCliente = new BufferedWriter(new OutputStreamWriter(os));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 	}
 	
 	public void run()
