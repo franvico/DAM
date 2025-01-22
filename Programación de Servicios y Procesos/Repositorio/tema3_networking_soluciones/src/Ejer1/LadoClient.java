@@ -36,6 +36,8 @@ public class LadoClient {
 			os.close();
 			is.close();
 			
+			// byte[] miArray = new byte[n];
+			
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

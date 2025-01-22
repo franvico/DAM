@@ -27,6 +27,10 @@ NOTA: Si no aparece nada en el marketplace: actualizar Eclipse (Help -> Check fo
 - Ir a marketplace (help -> Eclipse Marketplace)
 - Buscar JBoos Tools (Sólo marcar "Hibernate Tools" se marcarán automáticamente)
 
+## Perspectiva de Hibernate (más fácil de visualizar)
+ - Window -> Open Perspective -> Hibernate
+ - Cargar esta perspectiva para generar el fichero de configuración de Hibernate de la misma forma que antes por si la anterior da error o no se genera correctamente
+
 ## Generar clases nuevas
 - Clic derecho en el proyecto -> New -> Other -> Hibernate -> Hibernate Configuration
      Es un fichero XML que se puede hacer a mano pero se puede hacer más fácil con el plugin de hibernate.
@@ -42,6 +46,13 @@ NOTA: Si no aparece nada en el marketplace: actualizar Eclipse (Help -> Check fo
     - No marcar la última casilla
 Puedo ver la generación del código del fichero en la pestaña "source"
 
-## Perspectiva
- - Window -> Open Perspective -> Hibernate
- - Cargar esta perspectiva para generar el fichero de configuración de Hibernate de la misma forma que antes por si la anterior da error o no se genera correctamente
+## Crear hibernate console
+Permite verificar si la conexión a BBDD es correcta. Sirve como referencia para que el plugin genere las clases desde la BBDD
+
+## Generar las clases de la BBDD
+Clic Derecho -> new -> reverse blablabla
+<br>
+Consola asociada al proyecto -> incluir tablas de las que quiero generar la clase<br>
+Me crea un fichero de configuración<br>
+Boton de start (verde) -> generar nuevas clases -> output directory (la carpeta java del proyecto)
+reveng.xml (el fichero que me ha creado antes)
