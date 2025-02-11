@@ -1,0 +1,51 @@
+package ExamenNetwork2425;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+public class Cliente {
+	
+	public static void main(String[] args) {
+		Socket s = new Socket();
+		InetSocketAddress isa = new InetSocketAddress("localhost", 7777);
+		
+		InputStream is;
+		OutputStream os;
+		try {
+			
+			s.connect(isa);
+			
+			is = s.getInputStream();
+			os = s.getOutputStream();
+			
+			BufferedReader br = new BufferedReader(new InputStreamReader(is));
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(os));
+			
+			
+			// cliente espera un mensaje de bienvenida con un menú
+			String mensajeBienvenida = "";
+			while(br.readLine() != null) {
+				System.out.println(br.readLine());
+//				mensajeBienvenida += br.readLine();
+			}
+//			System.out.println(mensajeBienvenida);
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	
+	
+	
+
+}

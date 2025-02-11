@@ -1,0 +1,24 @@
+package ExamenNetwork2425;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
+
+public class Servidor {
+	
+	public static void main(String[] args) {
+		
+		try {
+			ServerSocket ss = new ServerSocket();
+			InetSocketAddress addr = new InetSocketAddress("localhost", 7777);
+			
+			ss.bind(addr);
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

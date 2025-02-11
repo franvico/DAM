@@ -1,0 +1,89 @@
+package ExamenNetwork2425;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.Socket;
+import java.util.Map;
+
+public class GestorCliente implements Runnable{
+	
+	private static BufferedReader brCliente;
+	private static BufferedWriter bwCliente;
+	int idCliente;
+	Socket s;
+	
+	public GestorCliente(Socket s) {
+		this.s = s;
+		this.idCliente = s.getPort();
+		
+		InputStream is;
+		OutputStream os;
+		try {
+			is = s.getInputStream();
+			os = s.getOutputStream();
+			
+			this.brCliente = new BufferedReader(new InputStreamReader(is));
+			this.bwCliente = new BufferedWriter(new OutputStreamWriter(os));
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void run() {
+		
+		// Servidor envía mensaje de bienvenida y opciones
+		String mensaje = "Bienvenido Cliente " + idCliente + ". Elige una opción --> | 1. Añadir tarea | 2. Completar tarea. | 3. Mostrar tareas |";
+		IOUtility.escribir(bwCliente, mensaje);
+		
+		// Servidor recibe opción
+		int opcion = Integer.parseInt(IOUtility.leer(brCliente));
+		
+		if(opcion == 1) {
+			addTarea();
+		}
+		else if(opcion == 2) {
+			completarTarea();
+		}
+		else if(opcion == 3) {
+			mostrarTareas();
+		}		
+	}
+	
+	public static void addTarea(Map listaTareas) {
+		String nombreTarea;
+		String descripcionTarea;
+		
+		// solicito nombre de la tarea
+		IOUtility.escribir(bwCliente, "Nombre de la tarea:");
+		// recibo nombre de la tarea
+		nombreTarea = IOUtility.leer(brCliente);
+		
+		// solicito la descripcion de la tarea
+		IOUtility.escribir(bwCliente, "Descripción de la tarea:");
+		// recibo la descripción de la tarea
+		descripcionTarea = IOUtility.leer(brCliente);
+		
+		// creo la tarea
+		Tarea tarea = new Tarea(nombreTarea, descripcionTarea);
+		
+		// añado la tarea a la lista (compruebo si ya existe)
+		synchronized (Servidor.listaTareas) {
+			
+		}
+		
+	}
+	public static void completarTarea() {
+		System.out.println("Completando tarea");
+	}
+	public static void mostrarTareas() {
+		System.out.println("Mostrando tareas");
+	}
+
+}

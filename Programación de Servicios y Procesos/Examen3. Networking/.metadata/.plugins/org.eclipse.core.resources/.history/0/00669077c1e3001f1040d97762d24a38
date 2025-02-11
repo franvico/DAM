@@ -1,0 +1,128 @@
+package ExamenNetwork2425;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class Cliente {
+	
+	private static BufferedReader br;
+	private static BufferedWriter bw;
+	private static ObjectInputStream ois;
+	private static ObjectOutputStream oos;
+	
+	public static void main(String[] args) {		
+		Scanner scan = new Scanner(System.in);
+		Socket s = new Socket();
+		InetSocketAddress isa = new InetSocketAddress("localhost", 7777);
+		
+		InputStream is;
+		OutputStream os;
+		
+		
+		try {
+			System.out.println("a");
+			s.connect(isa);
+			
+			is = s.getInputStream();
+			os = s.getOutputStream();
+			
+			br = new BufferedReader(new InputStreamReader(is));
+			bw = new BufferedWriter(new OutputStreamWriter(os));
+			
+			ois = new ObjectInputStream(is);
+			oos = new ObjectOutputStream(os);
+			System.out.println("a");
+			recibirMenuDeOpciones();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	public static void recibirMenuDeOpciones() {		
+		Scanner scan = new Scanner(System.in);		
+		System.out.println("a");
+		// cliente espera un mensaje de bienvenida con un menú
+		String mensajeBienvenida = IOUtility.leer(br);
+		System.out.println(mensajeBienvenida);
+		System.out.println("b");
+		// cliente envía una opción (1, 2 ó 3)
+		String opcion = scan.nextLine();
+		IOUtility.escribir(bw, opcion);
+		
+		if(opcion.equals(1)) {
+			rellenarTarea();
+		}
+		else if(opcion.equals(2)) {
+			completarTarea();
+		}
+		else if(opcion.equals(3)) {
+			recibirTareas();
+		}
+	}
+	
+	public static void rellenarTarea() {
+		Scanner scan = new Scanner(System.in);	
+		
+		// leo la solicitud de nombre
+		IOUtility.leer(br);
+		// envío el nombre
+		String nombreTarea = scan.nextLine();
+		IOUtility.escribir(bw, nombreTarea);
+		
+		// leo la solicitud de la descripcion
+		IOUtility.leer(br);
+		// envío la descripción
+		String descripcionTarea = scan.nextLine();
+		IOUtility.escribir(bw, descripcionTarea);
+		
+		// recibo confimación de tarea añadida
+		IOUtility.leer(br);
+		
+		// vuelvo a recibir el menu de opciones
+		recibirMenuDeOpciones();
+		
+	}
+	public static void completarTarea() {
+		
+	}
+	public static void recibirTareas() {		
+		
+		try {
+			// recibo el objeto tareas
+			List tareas = (List) ois.readObject();
+			
+			// muestro cada tarea
+			for (Iterator iterator = tareas.iterator(); iterator.hasNext();) {
+				Object tarea = (Object) iterator.next();
+				System.out.println(tarea.toString());
+			}
+			
+		} catch (ClassNotFoundException | IOException e) {
+			e.printStackTrace();
+		}
+		
+		// vuelvo a recibir el menu de opciones
+		recibirMenuDeOpciones();
+		
+	}
+	
+	
+	
+	
+	
+
+}
