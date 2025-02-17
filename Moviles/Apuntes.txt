@@ -11,3 +11,17 @@ Asegurarse de tener instalado SDK API. Una vez instalado el Android Studio:
 	Pestaña SDK Tools
 	 - Android SDK Build Tools 35
 	 - 
+
+FALLOS COMUNES QUE IMPIDEN QUE LA APP SE EJECUTE
+
+ - El theme de los activitys tiene que heredar de AppCompat
+	<activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light">
+
+ - Cambiar la versión de gradle a la 35
+	android {
+	    namespace = "com.example.probandoviewmodelscope"
+	    compileSdk = 35
