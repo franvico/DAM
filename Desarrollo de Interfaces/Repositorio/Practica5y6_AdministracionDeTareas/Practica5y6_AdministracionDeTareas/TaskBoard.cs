@@ -68,14 +68,17 @@ namespace Practica5y6_AdministracionDeTareas
                     {
                         case "pendiente":
                             panelPendientes.Controls.Add(taskItem);
+                            ReorganizarTareas(panelPendientes);
                             break;
 
                         case "enProceso":
                             panelEnProceso.Controls.Add(taskItem);
+                            ReorganizarTareas(panelEnProceso);
                             break;
 
                         case "completada":
                             panelCompletadas.Controls.Add(taskItem);
+                            ReorganizarTareas(panelCompletadas);
                             break;
 
                         default:
