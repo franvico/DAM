@@ -1,0 +1,2 @@
+Teoría -> Test + Desarrollo de conceptos (Ej. Big data, BI...) + Ejercicios prácticos (Pert/Gant)
+Práctica -> Odoo (Ej. Crear cuenta de pérdidas y ganancias...)
