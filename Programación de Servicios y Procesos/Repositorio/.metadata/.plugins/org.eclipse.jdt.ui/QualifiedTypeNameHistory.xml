@@ -26,10 +26,10 @@
     <fullyQualifiedTypeName name="java.net.Socket"/>
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
     <fullyQualifiedTypeName name="java.net.InetSocketAddress"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
     <fullyQualifiedTypeName name="javax.crypto.spec.SecretKeySpec"/>
     <fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 </qualifiedTypeNameHistroy>

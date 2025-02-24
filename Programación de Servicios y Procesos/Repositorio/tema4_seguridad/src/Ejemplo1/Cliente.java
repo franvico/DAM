@@ -2,6 +2,8 @@ package Ejemplo1;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.InetSocketAddress;
@@ -48,16 +50,18 @@ public class Cliente {
 		// Deconstruye clave (objeto -> bytes)?
 				byte[] keyBytes = key.getEncoded();
 				
-		// Envía mensaje
+		// Envía mensaje (Mejor usar DataOutpuStream)
+				os.write(msgCifrado.length);
 				os.write(msgCifrado);
-				os.flush();
+				os.flush();			
 				
 		// Envía clave
+				os.write(keyBytes.length);
 				os.write(keyBytes);
 				os.flush();
 				
-				
-				
+		// Cierro canales de comunicación
+				s.close();
 				
 		} catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException | IOException e) {
 			// TODO Auto-generated catch block

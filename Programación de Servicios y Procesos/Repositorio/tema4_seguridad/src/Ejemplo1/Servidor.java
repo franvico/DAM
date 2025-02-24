@@ -3,12 +3,16 @@ package Ejemplo1;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
+import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 
@@ -22,13 +26,15 @@ public class Servidor {
 			ss.bind(isa);
 			
 			Socket sCliente = ss.accept();
-			InputStream is = sCliente.getInputStream();	
+			InputStream is = sCliente.getInputStream();
 		
-		// Recibe mensaje
-			byte[] msgCifrado = is.readAllBytes();
+		// Recibe mensaje (Mejor usar DataInputStream)
+			int msgSize = is.read();
+			byte[] msgCifrado = is.readNBytes(msgSize);
 			
 		// Recibe clave (bytes)
-			byte[] keyBytes = is.readAllBytes();
+			int keySize = is.read();
+			byte[] keyBytes = is.readNBytes(keySize);
 			
 		// Recontruye clave (bytes -> objeto)
 			// Este constructor acepta un array de bytes para instanciar un nuevo objeto key, a diferencia de SecretKey
@@ -38,11 +44,17 @@ public class Servidor {
 			// Creo cifrador/descifrador de claves
 				Cipher c = Cipher.getInstance("AES");
 			// Configuro el cifrador/descifrador para descifrar
-				//SEGUIR AQUÍ!!!!
-			// Descrifor la clave
+				c.init(Cipher.DECRYPT_MODE, key);
+			// Descrifro el mensaje
+				String msgDescifrado = new String(c.doFinal(msgCifrado));
+		
+		// Muestro el mensaje en la consola del server
+			System.out.println(msgDescifrado);
 				
+		// Cierro canales de comunicación
+			is.close();
 
-		} catch (IOException | NoSuchAlgorithmException | NoSuchPaddingException e) {
+		} catch (IOException | NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException | IllegalBlockSizeException | BadPaddingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
