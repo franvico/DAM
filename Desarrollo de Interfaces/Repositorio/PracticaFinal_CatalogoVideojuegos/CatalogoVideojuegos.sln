@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoVideojuegos.API", "CatalogoVideojuegos.API\CatalogoVideojuegos.API.csproj", "{4407DBA3-E850-484D-AADA-212B1F00589F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogoVideojuegos.CLIENT", "CatalogoVideojuegos.CLIENT\CatalogoVideojuegos.CLIENT.csproj", "{F40E9B08-A920-478A-B69C-5D3F0FB6DC2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4407DBA3-E850-484D-AADA-212B1F00589F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4407DBA3-E850-484D-AADA-212B1F00589F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4407DBA3-E850-484D-AADA-212B1F00589F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4407DBA3-E850-484D-AADA-212B1F00589F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40E9B08-A920-478A-B69C-5D3F0FB6DC2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40E9B08-A920-478A-B69C-5D3F0FB6DC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40E9B08-A920-478A-B69C-5D3F0FB6DC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40E9B08-A920-478A-B69C-5D3F0FB6DC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

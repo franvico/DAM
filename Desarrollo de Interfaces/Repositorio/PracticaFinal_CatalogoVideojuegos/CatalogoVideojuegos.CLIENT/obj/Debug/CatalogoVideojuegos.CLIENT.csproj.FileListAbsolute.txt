@@ -1,0 +1,163 @@
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.CLIENT.exe.config
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.CLIENT.exe
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.CLIENT.pdb
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.API.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Optimization.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Mvc.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\MySql.Data.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Dapper.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Razor.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Google.Protobuf.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\ZstdSharp.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Memory.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Buffers.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.API.pdb
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.API.dll.config
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Optimization.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Mvc.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\MySql.Data.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Dapper.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Razor.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Google.Protobuf.pdb
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Google.Protobuf.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Memory.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Buffers.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Optimization.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Http.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.WebPages.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Razor.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.AssemblyReference.cache
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.exe.config
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Inicio.resources
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Properties.Resources.resources
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.GenerateResource.cache
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.CoreCompileInputs.cache
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\Catalogo.3E866CFD.Up2Date
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.exe
+C:\Users\Fran\Desktop\DAM\Desarrollo de Interfaces\Repositorio\PracticaFinal_CatalogoVideojuegos\CatalogoVideojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.pdb
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.CLIENT.exe.config
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.CLIENT.exe
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.CLIENT.pdb
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.API.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Optimization.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Mvc.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\MySql.Data.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Dapper.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Razor.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Google.Protobuf.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\ZstdSharp.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Memory.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Buffers.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.API.pdb
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\CatalogoVideojuegos.API.dll.config
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Optimization.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Mvc.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\MySql.Data.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Dapper.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.Razor.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Google.Protobuf.pdb
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Google.Protobuf.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Memory.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Buffers.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Optimization.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Mvc.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Http.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.WebPages.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.Razor.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\bin\Debug\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.AssemblyReference.cache
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.exe.config
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Properties.Resources.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.GenerateResource.cache
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.csproj.CoreCompileInputs.cache
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\Catalogo.3E866CFD.Up2Date
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.exe
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.pdb
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.Login.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.SignUp.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Index.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.HomeAdmin.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.HomeUsuario.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.CatalogoAdmin.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.VideojuegoAdmin.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.UsuarioAdmin.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.UsuariosAdmin.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.CatalogoUsuario.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.VideojuegoUsuario.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Carrito.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.MisJuegosUsuario.resources
+C:\Users\Fran\Desktop\catalogo_videojuegos\CatalogoVideojuegos.CLIENT\obj\Debug\CatalogoVideojuegos.CLIENT.Componentes.VideojuegoCarrito.resources

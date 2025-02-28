@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F40E9B08-A920-478A-B69C-5D3F0FB6DC2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CatalogoVideojuegos.CLIENT</RootNamespace>
+    <AssemblyName>CatalogoVideojuegos.CLIENT</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Carrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrito.Designer.cs">
+      <DependentUpon>Carrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CatalogoAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\CatalogoAdmin.Designer.cs">
+      <DependentUpon>CatalogoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\CatalogoUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\CatalogoUsuario.Designer.cs">
+      <DependentUpon>CatalogoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\HomeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\HomeAdmin.Designer.cs">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\HomeUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\HomeUsuario.Designer.cs">
+      <DependentUpon>HomeUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\MisJuegosUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\MisJuegosUsuario.Designer.cs">
+      <DependentUpon>MisJuegosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\SignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\UsuarioAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\UsuarioAdmin.Designer.cs">
+      <DependentUpon>UsuarioAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\UsuariosAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\UsuariosAdmin.Designer.cs">
+      <DependentUpon>UsuariosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\VideojuegoAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\VideojuegoAdmin.Designer.cs">
+      <DependentUpon>VideojuegoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\VideojuegoCarrito.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\VideojuegoCarrito.Designer.cs">
+      <DependentUpon>VideojuegoCarrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\VideojuegoUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\VideojuegoUsuario.Designer.cs">
+      <DependentUpon>VideojuegoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Carrito.resx">
+      <DependentUpon>Carrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\CatalogoAdmin.resx">
+      <DependentUpon>CatalogoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\CatalogoUsuario.resx">
+      <DependentUpon>CatalogoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\HomeAdmin.resx">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\HomeUsuario.resx">
+      <DependentUpon>HomeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\MisJuegosUsuario.resx">
+      <DependentUpon>MisJuegosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\UsuarioAdmin.resx">
+      <DependentUpon>UsuarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\UsuariosAdmin.resx">
+      <DependentUpon>UsuariosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\VideojuegoAdmin.resx">
+      <DependentUpon>VideojuegoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\VideojuegoCarrito.resx">
+      <DependentUpon>VideojuegoCarrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\VideojuegoUsuario.resx">
+      <DependentUpon>VideojuegoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CatalogoVideojuegos.API\CatalogoVideojuegos.API.csproj">
+      <Project>{4407DBA3-E850-484D-AADA-212B1F00589F}</Project>
+      <Name>CatalogoVideojuegos.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signup_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeUsuario_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navbarUsuario_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeAdmin_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navbarAdmin_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Portadas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videojuego_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carrito.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
