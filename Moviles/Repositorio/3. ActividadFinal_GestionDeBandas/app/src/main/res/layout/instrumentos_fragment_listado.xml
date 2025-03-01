@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tituloIntrumentos"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="GESTIÓN DE INSTRUMENTOS"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider" />
+
+<!--    Este RecyclerView me servirá un instrumentos_listitem por cada instrumento-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListadoInstrumentosListitem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/botonDetalleInstrumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalle Intrumento"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/botonNuevoInstrumentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Intrumento"
+        android:layout_marginTop="16dp"/>
+
+
+</LinearLayout>
