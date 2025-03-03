@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.IO;
 using System.Drawing;
+using System.Security.Cryptography;
 
 namespace CatalogoVideojuegos.CLIENT.Componentes
 {
@@ -19,6 +20,10 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
         private System.ComponentModel.IContainer components = null;
 
         private HttpClient client = new HttpClient();
+
+        // Clave y IV para la encriptación (deberían ser constantes y seguras)
+        private static readonly string key = "1234567890123456";  // 16 bytes para AES-128
+        private static readonly string iv = "1234567890123456";   // 16 bytes
 
         /// <summary> 
         /// Limpiar los recursos que se estén usando.
@@ -112,6 +117,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
             this.inputEmail.Size = new System.Drawing.Size(423, 74);
             this.inputEmail.TabIndex = 0;
             this.inputEmail.Text = "Email";
+            this.inputEmail.Focus();
             this.inputEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Login
@@ -148,7 +154,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
 
             try
             {
-                string urlApi = "http://localhost:54072/Usuarios/Login"; // Ajusta la URL según corresponda
+                string urlApi = "http://localhost:54072/Usuarios/Login";
                 HttpResponseMessage respuesta = await client.PostAsync(urlApi, contenido);
 
                 if (respuesta.IsSuccessStatusCode)
@@ -188,7 +194,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
             {
                 MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }       
         private Image CargarFotoDePerfil(string nombreImagen)
         {
             string rutaImagen = Path.Combine(Application.StartupPath, "FotosDePerfil", nombreImagen);

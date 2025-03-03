@@ -17,8 +17,9 @@ namespace CatalogoVideojuegos.CLIENT
         public Index()
         {
             InitializeComponent();
-            ChangeControl(new HomeUsuario(6, "Fran", CargarFotoDePerfil("default.png")));
-            //ChangeControl(new Login());
+            //ChangeControl(new HomeAdmin("Fran", CargarFotoDePerfil("default.png")));
+            //ChangeControl(new HomeUsuario(6, "Fran", CargarFotoDePerfil("default.png")));
+            ChangeControl(new Login());
 
             this.FormClosing += new FormClosingEventHandler(Index_FormClosing);
 

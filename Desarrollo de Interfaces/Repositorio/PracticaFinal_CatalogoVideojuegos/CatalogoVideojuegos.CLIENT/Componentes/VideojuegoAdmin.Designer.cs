@@ -1,6 +1,7 @@
 ﻿using System.Net.Http;
 using System.Windows.Forms;
 using System;
+using System.Threading.Tasks;
 
 namespace CatalogoVideojuegos.CLIENT.Componentes
 {
@@ -139,7 +140,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
                     {
                         MessageBox.Show("Juego eliminado exitosamente.", "Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        this.Parent.Controls.Remove(this);
+                        await ActualizarCatalogoAdmin();
                     }
                     else
                     {
@@ -150,6 +151,20 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
                 {
                     MessageBox.Show("Error al conectar con el servidor: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private async Task ActualizarCatalogoAdmin()
+        {
+            Control padre = this.Parent;
+            while (padre != null && !(padre is CatalogoAdmin))
+            {
+                padre = padre.Parent;
+            }
+
+            if (padre is CatalogoAdmin catalogoAdmin)
+            {
+                await catalogoAdmin.ActualizarCatalogo();
             }
         }
 

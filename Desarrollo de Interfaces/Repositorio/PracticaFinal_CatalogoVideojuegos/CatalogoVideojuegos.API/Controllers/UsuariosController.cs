@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using CatalogoVideojuegos.API.Models;
 using Dapper;
 using MySql.Data.MySqlClient;
+using static Mysqlx.Expect.Open.Types.Condition.Types;
 
 namespace CatalogoVideojuegos.API.Controllers
 {
     public class UsuariosController : Controller
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["catalogo_videojuegos_DB"].ConnectionString;
+
+        // Clave y IV para la encriptación (deberían ser constantes y seguras)
+        private static readonly string key = "1234567890123456";  // 16 bytes para AES-128
+        private static readonly string iv = "1234567890123456";   // 16 bytes
 
         // GET: Usuarios/GetAll
         public ActionResult GetAll()
@@ -103,7 +111,7 @@ namespace CatalogoVideojuegos.API.Controllers
                 }
 
                 // Verificar la contraseña (suponiendo que la contraseña se almacena en texto plano)
-                if (usuarioDB.Password != usuario.Password)
+                if (DesencriptarContraseña(usuarioDB.Password) != usuario.Password)
                 {
                     return new HttpStatusCodeResult(HttpStatusCode.Unauthorized, "Contraseña incorrecta.");
                 }
@@ -187,6 +195,25 @@ namespace CatalogoVideojuegos.API.Controllers
                 return Json(new { error = ex.Message });
             }
         }
+        private string DesencriptarContraseña(string contraseñaEncriptada)
+        {
+            using (Aes aesAlg = Aes.Create())
+            {
+                aesAlg.Key = Encoding.UTF8.GetBytes(key);
+                aesAlg.IV = Encoding.UTF8.GetBytes(iv);
 
+                ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+                using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(contraseñaEncriptada)))
+                {
+                    using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                    {
+                        using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                        {
+                            return srDecrypt.ReadToEnd();
+                        }
+                    }
+                }
+            }
+        }
     }
 }

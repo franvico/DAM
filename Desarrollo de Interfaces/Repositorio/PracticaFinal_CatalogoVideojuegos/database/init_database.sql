@@ -21,7 +21,8 @@ CREATE TABLE videojuegos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     precio DECIMAL(10,2) NULL,
-    portada VARCHAR(500) DEFAULT 'default.png'
+    portada VARCHAR(500) DEFAULT 'default.png',
+    decatalogado BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE compras (
@@ -34,4 +35,5 @@ CREATE TABLE compras (
 
 -- VALORES INICIALES (USUARIO ADMIN)
 INSERT INTO usuarios (nombre, email, password, baneado, admin)  
-VALUES ('admin', 'admin@catalogo_videojuegos.es', 'admin', FALSE, TRUE);
+VALUES ('admin', 'admin@catalogo_videojuegos.es', 'CinA5MJWDvBTvOJSvluE4g', FALSE, TRUE);
+-- El valor de la password es "admin" encriptado

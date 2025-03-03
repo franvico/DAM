@@ -327,7 +327,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
             portada = "default.png";
         }
 
-        private async void ActualizarCatalogo()
+        public async Task ActualizarCatalogo()
         {
             panelContenidoCatalogo.Controls.Clear(); // Limpiar el panel antes de actualizar
 
@@ -343,7 +343,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
 
                     foreach (var juego in videojuegos)
                     {
-                        VideojuegoAdmin controlJuego = new VideojuegoAdmin(juego.Id, juego.Titulo, CargarImagen(juego.Portada));
+                        VideojuegoAdmin controlJuego = new VideojuegoAdmin(juego.Id, juego.Titulo, CargarImagen(juego.Portada), juego.Descatalogado);
 
                         panelContenidoCatalogo.Controls.Add(controlJuego);
                     }

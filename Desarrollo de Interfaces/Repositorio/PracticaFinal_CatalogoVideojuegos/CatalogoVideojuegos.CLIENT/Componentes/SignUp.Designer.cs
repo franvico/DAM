@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.IO;
 using System.Drawing;
+using System.Security.Cryptography;
 
 namespace CatalogoVideojuegos.CLIENT.Componentes
 {
@@ -18,6 +19,10 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
         private System.ComponentModel.IContainer components = null;
 
         private HttpClient client = new HttpClient();
+
+        // Clave y IV para la encriptación (deberían ser constantes y seguras)
+        private static readonly string key = "1234567890123456";  // 16 bytes para AES-128
+        private static readonly string iv = "1234567890123456";   // 16 bytes
 
         /// <summary> 
         /// Limpiar los recursos que se estén usando.
@@ -205,7 +210,7 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
             {
                 Nombre = inputNombre.Text.Trim(),
                 Email = inputEmail.Text.Trim(),
-                Password = inputPassword.Text.Trim(),
+                Password = EncriptarContraseña(inputPassword.Text.Trim()),
                 Foto = foto
             };
 
@@ -240,6 +245,28 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
             catch (Exception ex)
             {
                 MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
+        private string EncriptarContraseña(string contraseña)
+        {
+            using (Aes aesAlg = Aes.Create())
+            {
+                aesAlg.Key = Encoding.UTF8.GetBytes(key);
+                aesAlg.IV = Encoding.UTF8.GetBytes(iv);
+
+                ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+                using (MemoryStream msEncrypt = new MemoryStream())
+                {
+                    using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                    {
+                        using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                        {
+                            swEncrypt.Write(contraseña);
+                        }
+                    }
+                    return Convert.ToBase64String(msEncrypt.ToArray());
+                }
             }
         }
         private void GuardarFoto()

@@ -11,5 +11,7 @@ namespace CatalogoVideojuegos.API.Models
         public string Titulo { get; set; }
         public decimal? Precio { get; set; }  // Puede ser nulo
         public string Portada { get; set; }
+        public bool Descatalogado { get; set; }
+
     }
 }

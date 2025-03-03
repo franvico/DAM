@@ -114,19 +114,21 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
 
                     foreach (var juego in videojuegos)
                     {
-                        VideojuegoUsuario controlJuego;
+                        //VideojuegoUsuario controlJuego;
 
                         if (juegosUsuarios.Contains(juego.Id))
                         {
-                            controlJuego = new VideojuegoUsuario(juego.Id, juego.Titulo, CargarImagen(juego.Portada), "comprado");
+                            panelContenidoCatalogo.Controls.Add(new VideojuegoUsuario(juego.Id, juego.Titulo, CargarImagen(juego.Portada), "comprado"));
                         }
                         else
                         {
-                            controlJuego = new VideojuegoUsuario(juego.Id, juego.Titulo, CargarImagen(juego.Portada), "catalogo");
-                        }
-                        
+                            if (!juego.Descatalogado)
+                            {
+                                panelContenidoCatalogo.Controls.Add(new VideojuegoUsuario(juego.Id, juego.Titulo, CargarImagen(juego.Portada), "catalogo"));
+                            }                            
+                        }                        
 
-                        panelContenidoCatalogo.Controls.Add(controlJuego);
+                        //panelContenidoCatalogo.Controls.Add(controlJuego);
                     }
                 }
                 else

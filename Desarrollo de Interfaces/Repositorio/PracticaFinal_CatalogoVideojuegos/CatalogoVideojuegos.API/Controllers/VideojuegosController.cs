@@ -128,12 +128,12 @@ namespace CatalogoVideojuegos.API.Controllers
             using (var connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string query = "DELETE FROM videojuegos WHERE id = @Id";
+                string query = "UPDATE videojuegos SET descatalogado = TRUE WHERE id = @Id";
                 int rowsAffected = connection.Execute(query, new { Id = id });
 
                 if (rowsAffected > 0)
                 {
-                    return Json(new { success = true, message = "Videojuego eliminado correctamente." }, JsonRequestBehavior.AllowGet);
+                    return Json(new { success = true, message = "Videojuego descatalogado correctamente." }, JsonRequestBehavior.AllowGet);
                 }
                 else
                 {
@@ -141,6 +141,24 @@ namespace CatalogoVideojuegos.API.Controllers
                 }
             }
         }
+        //public ActionResult Delete(int id)
+        //{
+        //    using (var connection = new MySqlConnection(connectionString))
+        //    {
+        //        connection.Open();
+        //        string query = "DELETE FROM videojuegos WHERE id = @Id";
+        //        int rowsAffected = connection.Execute(query, new { Id = id });
+
+        //        if (rowsAffected > 0)
+        //        {
+        //            return Json(new { success = true, message = "Videojuego eliminado correctamente." }, JsonRequestBehavior.AllowGet);
+        //        }
+        //        else
+        //        {
+        //            return Json(new { success = false, message = "No se encontró el videojuego." }, JsonRequestBehavior.AllowGet);
+        //        }
+        //    }
+        //}
 
         // POST: Videojuegos/Delete/5
         [HttpPost]

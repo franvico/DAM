@@ -23,6 +23,10 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
             this.Resize += Signup_Resize;
 
             botonAddFoto.Click += AddFotoDePerfil;
+
+            this.Load += HacerFocoEnElInputNombre;
+            AgregarEfectosInputEmail();
+            AgregarEfectosInputPassword();
         }
         private void SignUp_Paint(object sender, PaintEventArgs e)
         {
@@ -31,6 +35,62 @@ namespace CatalogoVideojuegos.CLIENT.Componentes
         private void Signup_Resize(object sender, EventArgs e)
         {
             panelLoginForm.Location = new Point((this.Width - panelLoginForm.Width - 100), (this.Height - panelLoginForm.Height - 100));
+        }
+        private void HacerFocoEnElInputNombre(object sender, EventArgs e)
+        {
+            this.ActiveControl = inputNombre; // Forzamos el foco
+            inputNombre.Focus();
+
+            this.inputNombre.Enter += (s, e2) => {
+                if (inputNombre.Text == "Nombre")
+                {
+                    inputNombre.Text = "";
+                }
+            };
+            this.inputNombre.Leave += (s, e2) => {
+                if (string.IsNullOrWhiteSpace(inputNombre.Text))
+                {
+                    inputNombre.Text = "Nombre";
+                }
+            };
+
+        }
+        private void AgregarEfectosInputEmail()
+        {
+            this.inputEmail.Enter += (s, e2) => {
+                if (inputEmail.Text == "Email")
+                {
+                    inputEmail.Text = "";
+                }
+            };
+            this.inputEmail.Leave += (s, e2) => {
+                if (string.IsNullOrWhiteSpace(inputEmail.Text))
+                {
+                    inputEmail.Text = "Email";
+                }
+            };
+
+        }
+        private void AgregarEfectosInputPassword()
+        {
+            this.inputPassword.Enter += (s, e) => {
+                if (inputPassword.Text == "Password")
+                {
+                    inputPassword.Text = "";
+                    this.inputPassword.PasswordChar = '*';
+                }
+            };
+            this.inputPassword.Leave += (s, e) => {
+                if (string.IsNullOrWhiteSpace(inputPassword.Text))
+                {
+                    inputPassword.Text = "Password";
+                    inputPassword.PasswordChar = '\0'; // Esto es para quitar el '*' cuando se vuelve al placeholder
+                }
+                else
+                {
+                    inputPassword.PasswordChar = '*'; // Esto asegura que la contraseña se vea en asteriscos cuando no es el placeholder
+                }
+            };
         }
     }
 }
