@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="8dp">
 
-    <TextView android:id="@+id/tipo"
+    <TextView android:id="@+id/labelTipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="24sp" />
-    <TextView android:id="@+id/numeroDeSerie"
+    <TextView android:id="@+id/labelNumeroDeSerie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="normal"

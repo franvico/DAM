@@ -14,6 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.gestiondebandas.database.Banda
 import com.example.gestiondebandas.ui.theme.GestionDeBandasTheme
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        // Hago una interacción con la base de datos para poder usar el AppInspector
+        val nif = 1234
+        val thread = Thread {
+            val banda = GestionDeBandasApp.database.bandaDao().getBandaPorNif(nif)
+            if (banda != null) {
+                println("Banda encontrada: ${banda.nombre}, Ciudad: ${banda.ciudad}")
+            } else {
+                println("No se encontró una banda con nif: $nif")
+            }
+        }
+        thread.start()
 
         // en un AppCompatActivity se pueden recoger los id de los componentes al crear la clase
         val botonGestionInstrumentos = findViewById<Button>(R.id.botonGestionInstrumentos)
@@ -32,5 +45,4 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
 }

@@ -2,6 +2,7 @@ package com.example.gestiondebandas
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gestiondebandas.database.Instrumento
 
 class InstrumentosActivityDetalleORegistro : AppCompatActivity() {
 
@@ -16,8 +17,14 @@ class InstrumentosActivityDetalleORegistro : AppCompatActivity() {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
 
         if (fragmentType == "detalle") {
+            // Obtengo el instrumento que se pasa desde la otra activity y lo transformo en un bundle para poder pasárselo al fragment como argument
+            val instrumento = intent.getSerializableExtra("instrumento") as? Instrumento
+            val bundle = Bundle()
+            bundle.putSerializable("instrumento", instrumento)
             // Cargar el fragmento de detalle
             val fragmentDetalle = InstrumentosFragmentDetalle()
+            fragmentDetalle.arguments = bundle
+            // Reemplazo el fragment
             fragmentTransaction.replace(R.id.fragmentContainerViewInstrumentosDetalleORegistro, fragmentDetalle)
         } else if (fragmentType == "registro") {
             // Cargar el fragmento de registro

@@ -22,7 +22,7 @@
 
 <!--    Este RecyclerView me servirá un instrumentos_listitem por cada instrumento-->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewListadoInstrumentosListitem"
+        android:id="@+id/recyclerViewListadoInstrumentos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
