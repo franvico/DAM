@@ -3,7 +3,8 @@ package com.example.gestiondebandas
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.gestiondebandas.database.Instrumento
+import com.example.gestiondebandas.database.Banda
+import com.example.gestiondebandas.database.BandaConMusicos
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -12,25 +13,27 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.cancellation.CancellationException
 
-class InstrumentosViewModel : ViewModel(){
+class BandasViewModel : ViewModel() {
 
     // CoroutineScope asociado al ViewModel
     private val viewModelScope = CoroutineScope(Dispatchers.Main + SupervisorJob())
 
-    // LiveData para los instrumentos
-    private val _instrumentos = MutableLiveData<List<Instrumento>>()
-    val instrumentos: LiveData<List<Instrumento>> get() = _instrumentos
+    // LiveData para los bandas
+    private val _bandas = MutableLiveData<List<Banda>>()
+    private val _bandasConMusicos = MutableLiveData<List<BandaConMusicos>>()
+    val bandas: LiveData<List<Banda>> get() = _bandas
+    val bandasConMusicos: LiveData<List<BandaConMusicos>> get() = _bandasConMusicos
 
-    // Función que carga los instrumentos desde la base de datos
-    fun obtenerInstrumentos() {
+    // Función que carga las bandas desde la base de datos
+    fun obtenerBandas() {
         viewModelScope.launch {
             try {
                 // Realizamos la consulta en un hilo de IO para no bloquear el hilo principal
-                val instrumentosLista = withContext(Dispatchers.IO) {
-                    GestionDeBandasApp.database.instrumentoDao().getInstrumentos()
+                val bandasLista = withContext(Dispatchers.IO) {
+                    GestionDeBandasApp.database.bandaDao().getBandas()
                 }
                 // Publicamos los datos cargados en el LiveData
-                _instrumentos.postValue(instrumentosLista)
+                _bandas.postValue(bandasLista)
             } catch (e: CancellationException) {
                 // Manejo de errores en caso de que se cancele la coroutine
                 println("Coroutine was canceled")
@@ -38,12 +41,12 @@ class InstrumentosViewModel : ViewModel(){
         }
     }
 
-    // Función para registrar un instrumento. Le paso como parámetros también dos funciones que me ayudarán a notificar al usuario si el registro se ha completado o no
-    fun registrarInstrumento(instrumento: Instrumento, onSuccess: () -> Unit, onError: (String) -> Unit) {
+    // Función para registrar un banda. Le paso como parámetros también dos funciones que me ayudarán a notificar al usuario si el registro se ha completado o no
+    fun registrarBanda(banda: Banda, onSuccess: () -> Unit, onError: (String) -> Unit) {
         viewModelScope.launch {
             try {
                 withContext(Dispatchers.IO) {
-                    GestionDeBandasApp.database.instrumentoDao().addInstrumento(instrumento)
+                    GestionDeBandasApp.database.bandaDao().addBanda(banda)
                 }
                 onSuccess()
             } catch (e: Exception) {
@@ -52,14 +55,14 @@ class InstrumentosViewModel : ViewModel(){
         }
     }
 
-    // Método para actualizar el instrumento en la base de datos
-    fun actualizarInstrumento(instrumento: Instrumento, onSuccess: () -> Unit, onError: (String) -> Unit) {
+    // Método para actualizar el banda en la base de datos
+    fun actualizarBanda(banda: Banda, onSuccess: () -> Unit, onError: (String) -> Unit) {
         viewModelScope.launch {
             try {
                 // la acción de la base de datos la hacemos en el hilo secundario
                 val rowsUpdated = withContext(Dispatchers.IO) {
-                    // Actualizamos el instrumento en la base de datos
-                    GestionDeBandasApp.database.instrumentoDao().actualizarInstrumento(instrumento)
+                    // Actualizamos el banda en la base de datos
+                    GestionDeBandasApp.database.bandaDao().actualizarBanda(banda)
                 }
                 // la acción de mostrar el mensaje la hacemos en el hilo principal
                 withContext(Dispatchers.Main) {
@@ -67,36 +70,52 @@ class InstrumentosViewModel : ViewModel(){
                     if (rowsUpdated > 0) {
                         onSuccess()  // Llamamos a la función de éxito
                     } else {
-                        onError("No se pudo actualizar el instrumento.")  // Llamamos a la función de error
+                        onError("No se pudo actualizar el banda.")  // Llamamos a la función de error
                     }
                 }
 
             } catch (e: Exception) {
                 // En caso de error, capturamos la excepción y llamamos a onError
-                onError("Error al actualizar el instrumento: ${e.message}")
+                onError("Error al actualizar el banda: ${e.message}")
             }
         }
     }
 
-    // Método para eliminar el instrumento de la base de datos
-    fun eliminarInstrumento(instrumento: Instrumento, onSuccess: () -> Unit, onError: (String) -> Unit) {
+    // Método para eliminar el banda de la base de datos
+    fun eliminarBanda(banda: Banda, onSuccess: () -> Unit, onError: (String) -> Unit) {
         viewModelScope.launch {
             try {
                 val rowsDeleted = withContext(Dispatchers.IO) {
-                    // Eliminamos el instrumento de la base de datos
-                    GestionDeBandasApp.database.instrumentoDao().eliminarInstrumento(instrumento)
+                    // Eliminamos el banda de la base de datos
+                    GestionDeBandasApp.database.bandaDao().eliminarBanda(banda)
                 }
                 withContext(Dispatchers.Main) {
                     // Verificamos si se eliminó algún registro
                     if (rowsDeleted > 0) {
                         onSuccess()  // Llamamos a la función de éxito
                     } else {
-                        onError("No se pudo eliminar el instrumento.")  // Llamamos a la función de error
+                        onError("No se pudo eliminar el banda.")  // Llamamos a la función de error
                     }
                 }
             } catch (e: Exception) {
                 // En caso de error, capturamos la excepción y llamamos a onError
-                onError("Error al eliminar el instrumento: ${e.message}")
+                onError("Error al eliminar el banda: ${e.message}")
+            }
+        }
+    }
+
+    fun obtenerBandasConMusicos() {
+        viewModelScope.launch {
+            try {
+                // Realizamos la consulta en un hilo de IO para no bloquear el hilo principal
+                val bandasConMusicosLista = withContext(Dispatchers.IO) {
+                    GestionDeBandasApp.database.bandaDao().getBandasConMusicos()
+                }
+                // Publicamos los datos cargados en el LiveData
+                _bandasConMusicos.postValue(bandasConMusicosLista)
+            } catch (e: CancellationException) {
+                // Manejo de errores en caso de que se cancele la coroutine
+                println("Coroutine was canceled")
             }
         }
     }
@@ -106,5 +125,4 @@ class InstrumentosViewModel : ViewModel(){
         super.onCleared()
         viewModelScope.cancel()
     }
-
 }

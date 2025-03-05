@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tituloIntrumentos"
+        android:id="@+id/tituloIntrumentosFragmentListado"
         android:layout_width="match_parent"
         android:layout_height="67dp"
         android:text="GESTIÓN DE INSTRUMENTOS"
@@ -34,16 +34,10 @@
         android:background="?android:attr/listDivider" />
 
     <Button
-        android:id="@+id/botonDetalleInstrumento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Detalle Intrumento"
-        android:layout_marginTop="16dp"/>
-    <Button
         android:id="@+id/botonNuevoInstrumentos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo Intrumento"
+        android:text="Nuevo Instrumento"
         android:layout_marginTop="16dp"/>
 
 

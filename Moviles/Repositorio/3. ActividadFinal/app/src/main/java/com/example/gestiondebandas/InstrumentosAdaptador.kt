@@ -13,7 +13,6 @@ class InstrumentosAdaptador(
     private val clickListener : (Instrumento) -> Unit
 ) : RecyclerView.Adapter<InstrumentosAdaptador.InstrumentosViewHolder>(){
 
-
     class InstrumentosViewHolder(val item : View) : RecyclerView.ViewHolder(item) {
         val labelTipo = item.findViewById(R.id.labelTipo) as TextView
         val labelNumeroDeSerie = item.findViewById(R.id.labelNumeroDeSerie) as TextView

@@ -36,6 +36,24 @@ class MainActivity : AppCompatActivity() {
         thread.start()
 
         // en un AppCompatActivity se pueden recoger los id de los componentes al crear la clase
+        val botonGestionBandas = findViewById<Button>(R.id.botonGestionBandas)
+        botonGestionBandas.setOnClickListener {
+            val intent = Intent(
+                this@MainActivity,
+                BandasActivity::class.java
+            )
+            startActivity(intent)
+        }
+
+        val botonGestionMusicos = findViewById<Button>(R.id.botonGesionMusicos)
+        botonGestionMusicos.setOnClickListener {
+            val intent = Intent(
+                this@MainActivity,
+                MusicosActivity::class.java
+            )
+            startActivity(intent)
+        }
+
         val botonGestionInstrumentos = findViewById<Button>(R.id.botonGestionInstrumentos)
         botonGestionInstrumentos.setOnClickListener {
             val intent = Intent(

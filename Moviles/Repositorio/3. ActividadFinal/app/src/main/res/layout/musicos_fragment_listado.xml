@@ -5,41 +5,40 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tituloMusicosFragmentListado"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="ELIGE UNA OPCIÓN A GESTIONAR"
+        android:text="GESTIÓN DE MÚSICOS"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center" />
 
     <View
-        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider" />
+
+    <!--    Este RecyclerView me servirá un bandas_listitem por cada banda-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListadoMusicos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider" />
 
     <Button
-        android:id="@+id/botonGestionBandas"
+        android:id="@+id/botonNuevoMusico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bandas"
+        android:text="Nuevo Músico"
         android:layout_marginTop="16dp"/>
 
-    <Button
-        android:id="@+id/botonGesionMusicos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Músicos"
-        android:layout_marginTop="16dp"/>
-
-    <Button
-        android:id="@+id/botonGestionInstrumentos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Instrumentos"
-        android:layout_marginTop="16dp"/>
 
 </LinearLayout>

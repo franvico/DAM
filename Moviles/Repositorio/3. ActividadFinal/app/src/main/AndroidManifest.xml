@@ -31,6 +31,22 @@
             android:name=".InstrumentosActivityDetalleORegistro"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name=".BandasActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name=".BandasActivityDetalleORegistro"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name=".MusicosActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"/>
+        <activity
+            android:name=".MusicosActivityDetalleORegistro"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat"/>
     </application>
 
 </manifest>

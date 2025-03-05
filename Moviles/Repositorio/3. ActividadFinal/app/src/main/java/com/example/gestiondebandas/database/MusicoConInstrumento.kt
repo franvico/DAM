@@ -2,6 +2,7 @@ package com.example.gestiondebandas.database
 
 import androidx.room.Embedded
 import androidx.room.Relation
+import java.io.Serializable
 
 data class MusicoConInstrumento(
     @Embedded val musico: Musico,
@@ -9,5 +10,5 @@ data class MusicoConInstrumento(
         parentColumn = "dni",
         entityColumn = "dni_musico"
     )
-    val instrumento: Instrumento
-)
+    val instrumento: Instrumento?
+) : Serializable

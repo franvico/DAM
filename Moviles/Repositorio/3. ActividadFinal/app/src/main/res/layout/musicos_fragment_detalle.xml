@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tituloIntrumentosFragmentDetalle"
+        android:id="@+id/tituloMusicosFragmentDetalle"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="DETALLES DEL INSTRUMENTO"
+        android:text="DETALLES DEL MÚSICO"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -30,66 +30,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/imagenInstrumento"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:layout_gravity="center_horizontal"
-                android:scaleType="centerInside" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imagenMusico"-->
+            <!--                android:layout_width="200dp"-->
+            <!--                android:layout_height="200dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:layout_marginBottom="16dp"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:scaleType="centerInside" />-->
 
-            <TextView android:id="@+id/labelTipo"
+            <TextView android:id="@+id/labelDNI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="16sp" />
-            <TextView android:id="@+id/valorTipo"
+            <TextView android:id="@+id/valorDNI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="24sp" />
 
-            <TextView android:id="@+id/labelMarca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="normal"
-                android:textSize="16sp" />
-            <TextView android:id="@+id/valorMarca"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="24sp" />
-
-            <TextView android:id="@+id/labelModelo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="normal"
-                android:textSize="16sp" />
-            <TextView android:id="@+id/valorModelo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="24sp" />
-
-            <TextView android:id="@+id/labelNumeroDeSerie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="normal"
-                android:textSize="16sp" />
-            <TextView android:id="@+id/valorNumeroDeSerie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="24sp" />
-
-            <TextView android:id="@+id/labelDNIMusico"
+            <TextView android:id="@+id/labelNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
                 android:textSize="16sp" />
             <EditText
-                android:id="@+id/valorDNIMusico"
+                android:id="@+id/valorNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <TextView android:id="@+id/labelApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/valorApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <TextView android:id="@+id/labelTipoInstrumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+            <TextView android:id="@+id/valorTipoInstrumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView android:id="@+id/labelNIFBanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/valorNIFBanda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
@@ -105,14 +105,14 @@
                 android:id="@+id/botonModificarMusico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Modificar músico"
+                android:text="Modificar Músico"
                 android:layout_marginTop="16dp" />
 
             <Button
-                android:id="@+id/botonEliminarInstrumento"
+                android:id="@+id/botonEliminarMusico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Eliminar Instrumento"
+                android:text="Eliminar Músico"
                 android:background="@color/red_delete"
                 android:layout_marginTop="16dp" />
 
