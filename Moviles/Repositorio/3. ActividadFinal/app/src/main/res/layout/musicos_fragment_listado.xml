@@ -8,7 +8,7 @@
         android:id="@+id/tituloMusicosFragmentListado"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="GESTIÓN DE MÚSICOS"
+        android:text="@string/musicos_listado_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -20,7 +20,7 @@
         android:layout_marginTop="16dp"
         android:background="?android:attr/listDivider" />
 
-    <!--    Este RecyclerView me servirá un bandas_listitem por cada banda-->
+    <!--    Este RecyclerView me servirá un musicos_listitem por cada músico-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewListadoMusicos"
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:id="@+id/botonNuevoMusico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo Músico"
+        android:text="@string/musicos_boton_nuevo"
         android:layout_marginTop="16dp"/>
 
 

@@ -8,7 +8,7 @@
         android:id="@+id/tituloBandasFragmentRegistro"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="REGISTRAR NUEVA BANDA"
+        android:text="@string/bandas_registro_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -41,12 +41,12 @@
                 android:id="@+id/inputNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre" />
+                android:hint="@string/bandas_registro_input_nombre" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ciudad"
+                android:text="@string/bandas_registro_spinner_ciudad"
                 android:textSize="20sp"
                 android:paddingLeft="4dp"
                 android:paddingTop="8dp"
@@ -66,7 +66,7 @@
         android:id="@+id/botonRegistrarBanda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar"
+        android:text="@string/bandas_registro_boton_guardar"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>

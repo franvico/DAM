@@ -38,16 +38,16 @@ class InstrumentosFragmentDetalle : Fragment() {
         // Monto los datos del instrumento en los componentes del activity
         instrumento?.let {
             // Muestra los datos en el UI
-            view.findViewById<TextView>(R.id.labelTipo).text = "Tipo"
+            view.findViewById<TextView>(R.id.labelTipo).text = getString(R.string.instrumentos_detalle_label_tipo)
             view.findViewById<TextView>(R.id.valorTipo).text = it.tipo
-            view.findViewById<TextView>(R.id.labelMarca).text = "Marca"
+            view.findViewById<TextView>(R.id.labelMarca).text = getString(R.string.instrumentos_detalle_label_marca)
             view.findViewById<TextView>(R.id.valorMarca).text = it.marca
-            view.findViewById<TextView>(R.id.labelModelo).text = "Modelo"
+            view.findViewById<TextView>(R.id.labelModelo).text = getString(R.string.instrumentos_detalle_label_modelo)
             view.findViewById<TextView>(R.id.valorModelo).text = it.modelo
-            view.findViewById<TextView>(R.id.labelNumeroDeSerie).text = "Número de serie"
+            view.findViewById<TextView>(R.id.labelNumeroDeSerie).text = getString(R.string.instrumentos_detalle_label_num_serie)
             view.findViewById<TextView>(R.id.valorNumeroDeSerie).text = it.num_serie.toString()
-            view.findViewById<TextView>(R.id.labelDNIMusico).text = "DNI Músico"
-            view.findViewById<EditText>(R.id.valorDNIMusico).hint = it.dni_musico.toString()
+            view.findViewById<TextView>(R.id.labelDNIMusico).text = getString(R.string.instrumentos_detalle_label_dni_musico)
+            view.findViewById<EditText>(R.id.valorDNIMusico).setText(it.dni_musico.toString())
 
             // Obtener las correspondencias entre tipo de instrumento y nombre de imagen
             val tipoAImagen = obtenerCorrespondencias()
@@ -65,30 +65,31 @@ class InstrumentosFragmentDetalle : Fragment() {
         val botonEliminarInstrumento = view.findViewById<Button>(R.id.botonEliminarInstrumento)
         // Doy funcionalidad a los botones
         botonModificarMusico.setOnClickListener {
-            val nuevoDniMusico = view.findViewById<EditText>(R.id.valorDNIMusico).text.toString()
-            val nuevoDni = nuevoDniMusico.toIntOrNull()
+            val nuevoDniMusico = view.findViewById<EditText>(R.id.valorDNIMusico).text.toString().trim().toIntOrNull()
 
-            if (nuevoDni != null) {
-                instrumento?.let {
-                    if (it.dni_musico != nuevoDni) {
-                        it.dni_musico = nuevoDni
-                        // Actualizar el instrumento en la base de datos
-                        instrumentosViewModel.actualizarInstrumento(it, onSuccess = {
-                            // Mostrar mensaje de éxito
-                            Toast.makeText(
-                                requireContext(),
-                                "Instrumento actualizado",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }, onError = { errorMsg ->
-                            println("Error al eliminar: $errorMsg")
-                            Toast.makeText(requireContext(), "Error: $errorMsg", Toast.LENGTH_LONG)
-                                .show()
-                        })
-                    }
+            if (nuevoDniMusico == null) {
+                Toast.makeText(context, "No puede haber campos vacíos", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            instrumento?.let {
+                if (it.dni_musico != nuevoDniMusico) {
+                    it.dni_musico = nuevoDniMusico
+                    // Actualizar el instrumento en la base de datos
+                    instrumentosViewModel.actualizarInstrumento(it, onSuccess = {
+                        // Mostrar mensaje de éxito
+                        Toast.makeText(
+                            requireContext(),
+                            "Instrumento actualizado",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }, onError = { errorMsg ->
+                        println("Error al eliminar: $errorMsg")
+                        Toast.makeText(requireContext(), "Error: $errorMsg", Toast.LENGTH_LONG)
+                            .show()
+                    })
+                }else {
+                    Toast.makeText(requireContext(), "Actualiza el DNI del músico para modificar", Toast.LENGTH_SHORT).show()
                 }
-            } else {
-                Toast.makeText(requireContext(), "DNI no válido", Toast.LENGTH_SHORT).show()
             }
         }
         botonEliminarInstrumento.setOnClickListener {

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bands Management</string>
+<!--    Menú inicio-->
+    <string name="titulo_menu_inicio">SELECT AN OPTION TO MANAGE</string>
+    <string name="boton_bandas">Bands</string>
+    <string name="boton_musicos">Musicians</string>
+    <string name="boton_instrumentos">Instruments</string>
+
+<!--    Menú Bandas-->
+    <string name="bandas_listado_titulo">BANDS MANAGEMENT</string>
+    <string name="bandas_boton_nueva">NEW BAND</string>
+<!--    Registro Bandas-->
+    <string name="bandas_registro_titulo">ADD A NEW BAND</string>
+    <string name="bandas_registro_input_nombre">Name</string>
+    <string name="bandas_registro_spinner_ciudad">City</string>
+    <string name="bandas_registro_boton_guardar">Save</string>
+<!--    Detalle Bandas-->
+    <string name="bandas_detalle_titulo">BAND DETAILS</string>
+    <string name="bandas_detalle_label_nombre">Name</string>
+    <string name="bandas_detalle_spinner_ciudad">City</string>
+    <string name="bandas_detalle_spiner_musicos">Musicians</string>
+    <string name="bandas_detalle_boton_modificar">Modify band</string>
+    <string name="bandas_detalle_boton_eliminar">Delete band</string>
+
+<!--    Menú Músicos-->
+    <string name="musicos_listado_titulo">MUSICIANS MANAGEMENT</string>
+    <string name="musicos_boton_nuevo">NEW MUSICIAN</string>
+<!--    Registro Músicos-->
+    <string name="musicos_registro_titulo">ADD A NEW MUSICIAN</string>
+    <string name="musicos_registro_input_nombre">Name</string>
+    <string name="musicos_registro_input_apellido">Last Name</string>
+    <string name="musicos_registro_spinner_bandas">Band</string>
+    <string name="musicos_registro_boton_guardar">Save</string>
+<!--    Detalle Músicos-->
+    <string name="musicos_detalle_titulo">MUSICIAN DETAILS</string>
+    <string name="musicos_detalle_label_nombre">Name</string>
+    <string name="musicos_detalle_label_apellido">Last Name</string>
+    <string name="musicos_detalle_label_instrumento">Instrument</string>
+    <string name="musicos_detalle_mesaje_sin_instrumento">No instrument</string>
+    <string name="musicos_detalle_label_nif_banda">NIF Band</string>
+    <string name="musicos_detalle_boton_modificar">Modify musician</string>
+    <string name="musicos_detalle_boton_eliminar">Delete musician</string>
+
+<!--    Menú Instrumentos-->
+    <string name="instrumentos_listado_titulo">INSTRUMENTS MANAGEMENT</string>
+    <string name="instrumentos_boton_nuevo">NEW INSTRUMENT</string>
+<!--    Registro Instrumentos-->
+    <string name="instrumentos_registro_titulo">ADD A NEW INSTRUMENT</string>
+    <string name="instrumentos_registro_spinner_tipo">Type</string>
+    <string name="instrumentos_registro_input_marca">Brand</string>
+    <string name="instrumentos_registro_input_modelo">Model</string>
+    <string name="instrumentos_registro_input_num_serie">Serial number</string>
+    <string name="instrumentos_registro_input_dni_musico">DNI Musician</string>>
+    <string name="instrumentos_registro_boton_guardar">Save</string>
+<!--    Detalle Instrumentos-->
+    <string name="instrumento_detalle_titulo">INSTRUMENT DETAILS</string>
+    <string name="instrumentos_detalle_label_tipo">Type</string>
+    <string name="instrumentos_detalle_label_marca">Brand</string>
+    <string name="instrumentos_detalle_label_modelo">Model</string>
+    <string name="instrumentos_detalle_label_num_serie">Serial number</string>
+    <string name="instrumentos_detalle_label_dni_musico">DNI Musician</string>
+    <string name="instrumentos_detalle_boton_modificar">Modify its musician</string>
+    <string name="instrumentos_detalle_boton_eliminar">Delete instrument</string>
+
+    <string-array name="tipos_instrumentos">
+        <item>Piano</item>
+        <item>Saxofón</item>
+        <item>Guitarra</item>
+        <item>Guitarra Eléctrica</item>
+        <item>Batería</item>
+        <item>Violín</item>
+        <item>Trompeta</item>
+        <item>Contrabajo</item>
+        <item>Bajo</item>
+        <item>Clarinete</item>
+    </string-array>
+    <string-array name="ciudades">
+        <item>Alcalá de Henares</item>
+        <item>Alcobendas</item>
+        <item>Alcorcón</item>
+        <item>Arganda del Rey</item>
+        <item>Coslada</item>
+        <item>Fuenlabrada</item>
+        <item>Getafe</item>
+        <item>Leganés</item>
+        <item>Madrid</item>
+        <item>Móstoles</item>
+    </string-array>
+</resources>

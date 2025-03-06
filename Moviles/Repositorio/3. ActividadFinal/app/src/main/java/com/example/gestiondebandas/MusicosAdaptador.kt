@@ -17,7 +17,7 @@ class MusicosAdaptador (
         val labelNombre = item.findViewById(R.id.labelNombre) as TextView
         val labelDNI = item.findViewById(R.id.labelDNI) as TextView
         fun bindMusico(musico: MusicoConInstrumento){
-            labelNombre.text = musico.musico.nombre
+            labelNombre.text = "${musico.musico.nombre} ${musico.musico.apellido}"
             labelDNI.text = musico.musico.dni.toString()
         }
     }

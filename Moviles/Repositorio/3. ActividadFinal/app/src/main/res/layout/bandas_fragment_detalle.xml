@@ -8,7 +8,7 @@
         android:id="@+id/tituloBandasFragmentDetalle"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="DETALLES DE LA BANDA"
+        android:text="@string/bandas_detalle_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -43,18 +43,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
             <TextView android:id="@+id/valorNIF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:paddingLeft="4dp" />
 
             <TextView android:id="@+id/labelNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp" />
             <EditText
                 android:id="@+id/valorNombre"
                 android:layout_width="match_parent"
@@ -65,12 +71,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
-            <EditText
-                android:id="@+id/valorCiudad"
+                android:textSize="16sp"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinnerCiudadBanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView android:id="@+id/labelSpinnerMusicos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spinnerMusicosBanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <View
                 android:layout_width="match_parent"
@@ -82,14 +103,14 @@
                 android:id="@+id/botonModificarBanda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Modificar banda"
+                android:text="@string/bandas_detalle_boton_modificar"
                 android:layout_marginTop="16dp" />
 
             <Button
                 android:id="@+id/botonEliminarBanda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Eliminar banda"
+                android:text="@string/bandas_detalle_boton_eliminar"
                 android:background="@color/red_delete"
                 android:layout_marginTop="16dp" />
 

@@ -9,14 +9,17 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.gestiondebandas.database.Banda
 import com.example.gestiondebandas.database.Musico
 
 class MusicosFragmentRegistro : Fragment() {
 
     private val musicosViewModel: MusicosViewModel by viewModels()
+    private val bandasViewModel: BandasViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,25 +34,24 @@ class MusicosFragmentRegistro : Fragment() {
         val inputDNI: EditText = view.findViewById(R.id.inputDNI)
         val inputNombre: EditText = view.findViewById(R.id.inputNombre)
         val inputApellido: EditText = view.findViewById(R.id.inputApellido)
-        val inputNIFBanda: EditText = view.findViewById(R.id.inputNIFBanda)
-//        val spinnerBandas: Spinner = view.findViewById(R.id.spinnerBandasMusico)
+        val spinnerBandas: Spinner = view.findViewById(R.id.spinnerBandas)
         val botonGuardar: Button = view.findViewById(R.id.botonRegistrarMusico)
 
-//        configurarSpinnerBandas(spinnerBandas)
+        configurarSpinnerBandas(spinnerBandas)
 
         botonGuardar.setOnClickListener {
             val dni = inputDNI.text.toString().toIntOrNull()
             val nombre = inputNombre.text.toString()
             val apellido = inputApellido.text.toString()
-            val nifBanda = inputNIFBanda.text.toString().toIntOrNull()
-//            val ciudad = spinnerBandas.selectedItem.toString()
+            val ciudad = spinnerBandas.selectedItem.toString()
+            val bandaSeleccionada = spinnerBandas.selectedItem as Banda
 
-            if (dni != null && nombre.isNotEmpty() && apellido.isNotEmpty() && nifBanda != null) {
+            if (dni != null && nombre.isNotEmpty() && apellido.isNotEmpty()) {
                 val musico = Musico(
                     dni = dni,
                     nombre = nombre,
                     apellido = apellido,
-                    nif_banda = nifBanda
+                    nif_banda = bandaSeleccionada.nif
                 )
 
                 musicosViewModel.registrarMusico(
@@ -75,8 +77,49 @@ class MusicosFragmentRegistro : Fragment() {
         }
     }
 
-//    private fun configurarSpinnerBandas(spinnerTipo : Spinner) {
-//        // aquí añadir al spinner tantas opciones como registros de bandas haya
-//        // mostrar su nombre y al seleccionarlo pillar si nif
-//    }
+    private fun configurarSpinnerBandas(spinnerBandas : Spinner) {
+        // aquí añadir al spinner tantas opciones como registros de bandas haya
+        // mostrar su nombre y al seleccionarlo pillar si nif
+        // Obtener la lista de bandas desde el BandasViewModel
+        // Ejecutamos la consulta en un hilo secundario para no bloquear el hilo principal
+        Thread {
+            try {
+                val bandas = GestionDeBandasApp.database.bandaDao().getBandas()
+
+                // Crear un adaptador que muestre el "Nombre Banda - NIF"
+                val adapter = object : ArrayAdapter<Banda>(
+                    requireContext(),
+                    android.R.layout.simple_spinner_item,
+                    bandas
+                ) {
+                    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                        val view = super.getView(position, convertView, parent)
+                        val banda = getItem(position)
+                        if (banda != null) {
+                            (view as TextView).text = "${banda.nif} - ${banda.nombre}" // Formateamos el texto
+                        }
+                        return view
+                    }
+
+                    override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
+                        val view = super.getDropDownView(position, convertView, parent)
+                        val banda = getItem(position)
+                        if (banda != null) {
+                            (view as TextView).text = "${banda.nombre} - ${banda.nif}" // Formateamos el texto
+                        }
+                        return view
+                    }
+                }
+
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+                // Actualizar el adaptador en el hilo principal
+                requireActivity().runOnUiThread {
+                    spinnerBandas.adapter = adapter
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }.start()
+    }
 }

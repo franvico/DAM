@@ -1,5 +1,67 @@
 <resources>
-    <string name="app_name">GestionDeBandas</string>
+    <string name="app_name">Gestion De Bandas</string>
+<!--    Menú inicio-->
+    <string name="titulo_menu_inicio">ELIGE UNA OPCIÓN A GESTIONAR</string>
+    <string name="boton_bandas">Bandas</string>
+    <string name="boton_musicos">Músicos</string>
+    <string name="boton_instrumentos">Instrumentos</string>
+
+<!--    Menú Bandas-->
+    <string name="bandas_listado_titulo">GESTIÓN DE BANDAS</string>
+    <string name="bandas_boton_nueva">NUEVA BANDA</string>
+<!--    Registro Bandas-->
+    <string name="bandas_registro_titulo">REGISTRAR NUEVA BANDA</string>
+    <string name="bandas_registro_input_nombre">Nombre</string>
+    <string name="bandas_registro_spinner_ciudad">Ciudad</string>
+    <string name="bandas_registro_boton_guardar">Guardar</string>
+<!--    Detalle Bandas-->
+    <string name="bandas_detalle_titulo">DETALLES DE LA BANDA</string>
+    <string name="bandas_detalle_label_nombre">Nombre</string>
+    <string name="bandas_detalle_spinner_ciudad">Ciudad</string>
+    <string name="bandas_detalle_spiner_musicos">Músicos</string>
+    <string name="bandas_detalle_boton_modificar">Modificar banda</string>
+    <string name="bandas_detalle_boton_eliminar">Eliminar banda</string>
+
+<!--    Menú Músicos-->
+    <string name="musicos_listado_titulo">GESTIÓN DE MÚSICOS</string>
+    <string name="musicos_boton_nuevo">NUEVO MÚSICO</string>
+<!--    Registro Músicos-->
+    <string name="musicos_registro_titulo">REGISTRAR NUEVO MÚSICO</string>
+    <string name="musicos_registro_input_nombre">Nombre</string>
+    <string name="musicos_registro_input_apellido">Apellido</string>
+    <string name="musicos_registro_spinner_bandas">Banda</string>
+    <string name="musicos_registro_boton_guardar">Guardar</string>
+<!--    Detalle Músicos-->
+    <string name="musicos_detalle_titulo">DETALLES DEL MÚSICO</string>
+    <string name="musicos_detalle_label_nombre">Nombre</string>
+    <string name="musicos_detalle_label_apellido">Apellido</string>
+    <string name="musicos_detalle_label_instrumento">Instrumento</string>
+    <string name="musicos_detalle_mesaje_sin_instrumento">Sin instrumento</string>
+    <string name="musicos_detalle_label_nif_banda">NIF Banda</string>
+    <string name="musicos_detalle_boton_modificar">Modificar músico</string>
+    <string name="musicos_detalle_boton_eliminar">Eliminar músico</string>
+
+<!--    Menú Instrumentos-->
+    <string name="instrumentos_listado_titulo">GESTIÓN DE INSTRUMENTOS</string>
+    <string name="instrumentos_boton_nuevo">NUEVO INSTRUMENTO</string>
+<!--    Registro Instrumentos-->
+    <string name="instrumentos_registro_titulo">REGISTRAR NUEVO INSTRUMENTO</string>
+    <string name="instrumentos_registro_spinner_tipo">Tipo</string>
+    <string name="instrumentos_registro_input_marca">Marca</string>
+    <string name="instrumentos_registro_input_modelo">Modelo</string>
+    <string name="instrumentos_registro_input_num_serie">Número de serie</string>
+    <string name="instrumentos_registro_input_dni_musico">DNI Músico</string>>
+    <string name="instrumentos_registro_boton_guardar">Guardar</string>
+<!--    Detalle Instrumentos-->
+    <string name="instrumento_detalle_titulo">DETALLES DEL INSTRUMENTO</string>
+    <string name="instrumentos_detalle_label_tipo">Tipo</string>
+    <string name="instrumentos_detalle_label_marca">Marca</string>
+    <string name="instrumentos_detalle_label_modelo">Modelo</string>
+    <string name="instrumentos_detalle_label_num_serie">Número de serie</string>
+    <string name="instrumentos_detalle_label_dni_musico">DNI Músico</string>
+    <string name="instrumentos_detalle_boton_modificar">Modificar su músico</string>
+    <string name="instrumentos_detalle_boton_eliminar">Eliminar instrumento</string>
+
     <string-array name="tipos_instrumentos">
         <item>Piano</item>
         <item>Saxofón</item>

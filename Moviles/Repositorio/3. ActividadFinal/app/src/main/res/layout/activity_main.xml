@@ -2,17 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_inicio" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tituloActivityMain"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="ELIGE UNA OPCIÓN A GESTIONAR"
+        android:text="@string/titulo_menu_inicio"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
 
     <View
         android:id="@+id/divider"
@@ -25,21 +27,21 @@
         android:id="@+id/botonGestionBandas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bandas"
+        android:text="@string/boton_bandas"
         android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/botonGesionMusicos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Músicos"
+        android:text="@string/boton_musicos"
         android:layout_marginTop="16dp"/>
 
     <Button
         android:id="@+id/botonGestionInstrumentos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Instrumentos"
+        android:text="@string/boton_instrumentos"
         android:layout_marginTop="16dp"/>
 
 </LinearLayout>

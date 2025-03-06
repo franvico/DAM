@@ -8,7 +8,7 @@
         android:id="@+id/tituloIntrumentosFragmentRegistro"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="REGISTRAR NUEVO INSTRUMENTO"
+        android:text="@string/instrumentos_registro_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tipo"
+                android:text="@string/instrumentos_registro_spinner_tipo"
                 android:textSize="20sp"
                 android:paddingLeft="4dp"
                 android:paddingTop="8dp"
@@ -49,26 +49,26 @@
                 android:id="@+id/inputMarca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Marca" />
+                android:hint="@string/instrumentos_registro_input_marca" />
 
             <EditText
                 android:id="@+id/inputModelo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Modelo" />
+                android:hint="@string/instrumentos_registro_input_modelo" />
 
             <EditText
                 android:id="@+id/inputNumeroDeSerie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Número de serie"
+                android:hint="@string/instrumentos_registro_input_num_serie"
                 android:inputType="number" />
 
             <EditText
                 android:id="@+id/inputDNIMusico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="DNI Músico"
+                android:hint="@string/instrumentos_registro_input_dni_musico"
                 android:inputType="number"/>
 
         </LinearLayout>
@@ -79,7 +79,7 @@
         android:id="@+id/botonRegistrarInstrumento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar"
+        android:text="@string/instrumentos_registro_boton_guardar"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>

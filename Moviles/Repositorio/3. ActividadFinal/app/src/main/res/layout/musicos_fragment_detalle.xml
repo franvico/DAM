@@ -8,7 +8,7 @@
         android:id="@+id/tituloMusicosFragmentDetalle"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="DETALLES DEL MÚSICO"
+        android:text="@string/musicos_detalle_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -43,57 +43,67 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp" />
             <TextView android:id="@+id/valorDNI"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:paddingLeft="4dp" />
 
             <TextView android:id="@+id/labelNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp" />
             <EditText
                 android:id="@+id/valorNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:paddingLeft="4dp" />
 
             <TextView android:id="@+id/labelApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp" />
             <EditText
                 android:id="@+id/valorApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:paddingLeft="4dp" />
 
             <TextView android:id="@+id/labelTipoInstrumento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp" />
             <TextView android:id="@+id/valorTipoInstrumento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:paddingLeft="4dp" />
 
             <TextView android:id="@+id/labelNIFBanda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="normal"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:paddingLeft="4dp" />
             <EditText
                 android:id="@+id/valorNIFBanda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:inputType="number" />
+                android:inputType="number"
+                android:paddingLeft="4dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -105,14 +115,14 @@
                 android:id="@+id/botonModificarMusico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Modificar Músico"
+                android:text="@string/musicos_detalle_boton_modificar"
                 android:layout_marginTop="16dp" />
 
             <Button
                 android:id="@+id/botonEliminarMusico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Eliminar Músico"
+                android:text="@string/musicos_detalle_boton_eliminar"
                 android:background="@color/red_delete"
                 android:layout_marginTop="16dp" />
 

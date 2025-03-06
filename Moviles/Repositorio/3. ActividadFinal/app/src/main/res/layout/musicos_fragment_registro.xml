@@ -8,7 +8,7 @@
         android:id="@+id/tituloMusicosFragmentRegistro"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="REGISTRAR NUEVO MÚSICO"
+        android:text="@string/musicos_registro_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -41,36 +41,28 @@
                 android:id="@+id/inputNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre" />
+                android:hint="@string/musicos_registro_input_nombre" />
 
             <EditText
                 android:id="@+id/inputApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Apellido" />
+                android:hint="@string/musicos_registro_input_apellido" />
 
-            <EditText
-                android:id="@+id/inputNIFBanda"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="NIF Banda"
-                android:inputType="number" />
+                android:text="@string/musicos_registro_spinner_bandas"
+                android:textSize="20sp"
+                android:paddingLeft="4dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
 
-<!--SUSTITUIR METER EL NIF DE LA BANDA A MANO POR UN SPINNER CON LOS NOMBRES DE LAS BANDAS (QUE PILLE COMO VALUE EL NIF DE LA BANDA)-->
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Banda"-->
-<!--                android:textSize="20sp"-->
-<!--                android:paddingLeft="4dp"-->
-<!--                android:paddingTop="8dp"-->
-<!--                android:paddingBottom="4dp" />-->
-
-<!--            <Spinner-->
-<!--                android:id="@+id/spinnerBandasMusico"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                />-->
+            <Spinner
+                android:id="@+id/spinnerBandas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
         </LinearLayout>
 
@@ -80,7 +72,7 @@
         android:id="@+id/botonRegistrarMusico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guardar"
+        android:text="@string/musicos_registro_boton_guardar"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>

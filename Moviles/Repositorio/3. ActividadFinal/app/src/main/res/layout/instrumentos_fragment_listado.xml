@@ -8,7 +8,7 @@
         android:id="@+id/tituloIntrumentosFragmentListado"
         android:layout_width="match_parent"
         android:layout_height="67dp"
-        android:text="GESTIÓN DE INSTRUMENTOS"
+        android:text="@string/instrumentos_listado_titulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -37,7 +37,7 @@
         android:id="@+id/botonNuevoInstrumentos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nuevo Instrumento"
+        android:text="@string/instrumentos_boton_nuevo"
         android:layout_marginTop="16dp"/>
 
 
