@@ -1,0 +1,39 @@
+package logica;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import modelo.Jugador;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static Jugador masPartidos() {
+		
+		Session sesion = HibernateUtil.getSessionFactory().openSession();
+        Transaction tx = sesion.beginTransaction();
+        
+        String hql = "SELECT j.nombre "
+        		+ "FROM JuegaEn je, Jugador j "
+        		+ "WHERE je.idJugador = j.id"
+        		+ "GROUP BY je.idJugador "
+        		+ "ORDER BY COUNT(je.idJugador) DESC";
+        
+        Query<String> query = sesion.createQuery(hql, String.class);
+        query.setMaxResults(1);
+        
+        String nombre = query.uniqueResult();
+        
+        tx.commit();
+        sesion.close();
+        
+        return null;
+	}
+
+}

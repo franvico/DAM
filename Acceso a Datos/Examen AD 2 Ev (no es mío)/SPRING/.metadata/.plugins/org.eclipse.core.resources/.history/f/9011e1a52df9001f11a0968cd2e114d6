@@ -1,0 +1,22 @@
+package logica;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static Jugador masPartidos() {
+		
+		Session sesion = HibernateUtil.getSessionFactory().openSession();
+        Transaction tx = sesion.beginTransaction();
+        
+        return null;
+	}
+
+}

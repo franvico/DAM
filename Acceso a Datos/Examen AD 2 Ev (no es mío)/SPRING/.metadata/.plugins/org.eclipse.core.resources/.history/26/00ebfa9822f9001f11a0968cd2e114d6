@@ -1,0 +1,24 @@
+package clases;
+
+import java.util.Date;
+
+public class Partido {
+	
+	private int id;
+	private Date fecha;
+	private String lugar;
+	
+	public Partido(int id, Date fecha, String lugar) {
+		super();
+		this.id = id;
+		this.fecha = fecha;
+		this.lugar = lugar;
+	}
+	
+	public Partido() {
+		
+	}
+	
+	
+
+}

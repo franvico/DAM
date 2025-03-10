@@ -1,0 +1,40 @@
+package modelo;
+
+import java.util.List;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="jugador") 
+public class Jugador {
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	@Column(name="nombre")
+	private String nombre;
+	
+	@OneToMany(mappedBy = "jugador", fetch = FetchType.LAZY)
+	List<JuegaEn> combo;
+
+	public Jugador(int id, String nombre, List<JuegaEn> combo) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.combo = combo;
+	}
+	
+	public Jugador() {
+		
+	}
+	
+	
+}

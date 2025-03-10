@@ -1,0 +1,17 @@
+package modelo;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "partido")
+public class Partido {
+	
+	@Id //para indicar que es clave primaria
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //generar automaticamente
+	private int id;
+
+}

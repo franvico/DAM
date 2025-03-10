@@ -1,0 +1,41 @@
+package modelo;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "empleado_datos_prof")
+public class EmpleadoDatosProf {
+	
+	@EmbeddedId
+	private EmpleadoDatosProfPK id;
+	
+	@Column(name = "categoria")
+	private String categoria;
+	
+	@Column(name = "sueldo_bruto_anual")
+	private double sueldo_bruto_anual;
+	
+	@ManyToOne
+	@JoinColumn(name = "dni", insertable = false, updatable = false)
+	Empleado empleado;
+
+	public EmpleadoDatosProf(EmpleadoDatosProfPK id, String categoria, double sueldo_bruto_anual, Empleado empleado) {
+		super();
+		this.id = id;
+		this.categoria = categoria;
+		this.sueldo_bruto_anual = sueldo_bruto_anual;
+		this.empleado = empleado;
+	}
+	
+	public EmpleadoDatosProf() {
+		
+	}
+	
+	
+	
+}

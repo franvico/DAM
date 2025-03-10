@@ -1,0 +1,123 @@
+package logica;
+
+import java.util.Date;
+import java.util.Scanner;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import modelo.EmpleadoDatosProf;
+import modelo.EmpleadoDatosProfPK;
+import modelo.Proyecto;
+import modelo.ProyectoSede;
+import modelo.ProyectoSedePk;
+import modelo.Sede;
+
+public class Main {
+	
+	public static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static void crearProyectoAsignarloASede(String nomProy, Date fInicio, Date fFIn, int idSede) {
+		
+		Session sesion = HibernateUtil.getSessionFactory().openSession();
+        Transaction tx = sesion.beginTransaction();
+        
+        String hql = "FROM Proyecto "
+        		+ "WHERE nom_proy = :nomProy";
+        
+        Query<Proyecto> query = sesion.createQuery(hql, Proyecto.class);
+        query.setParameter("nomProy", nomProy);
+        
+        Proyecto p = query.uniqueResult();
+        Sede s = sesion.get(Sede.class, idSede);
+        
+        if(p!=null) {
+        	System.out.println("El proyecto con este nombre ya existe");
+        	sesion.close();
+        	return;
+        }
+        
+        if(s==null) {
+        	System.out.println("La sede no existe");
+            sesion.close();
+        	return;
+        }
+        
+        Proyecto proy = new Proyecto();
+        proy.setNom_proy(nomProy);
+        proy.setF_inicio(fInicio);
+        proy.setF_fin(fFIn);
+        
+        sesion.persist(proy);
+        sesion.flush();
+        System.out.println("Proyecto creado");
+        
+        Integer idProy = proy.getId_proy();
+        
+        ProyectoSedePk psPK = new ProyectoSedePk(idProy, idSede);
+        ProyectoSede ps = new ProyectoSede();
+        ps.setId(psPK);
+        ps.setF_inicio(fInicio);
+        ps.setF_fin(fFIn);
+        
+        sesion.persist(ps);
+        System.out.println("Proyecto "+idProy+" asignado a la sede "+idSede);
+        
+        tx.commit();
+        sesion.close();
+	}
+	
+	public static void añadirDatosProfesionales(String dni, String categoria, double sueldo) {
+		
+		Session sesion = HibernateUtil.getSessionFactory().openSession();
+        Transaction tx = sesion.beginTransaction();
+        
+        EmpleadoDatosProfPK datosPK = new EmpleadoDatosProfPK(dni);
+        EmpleadoDatosProf datos = sesion.get(EmpleadoDatosProf.class, datosPK);
+        
+        if(datos!=null) {
+        	System.out.println("El usuario ya existe, quieres modificarlo? (si/no):");
+        	String res = sc.next();
+        	
+        	switch (res) {
+				case "si":
+					datos.setCategoria(categoria);
+					datos.setSueldo_bruto_anual(sueldo);
+					
+					sesion.merge(datos);
+			        System.out.println("Datos del empleado actualizados");
+					break;
+				case "no":
+					System.out.println("Cerrando programa...");
+					break;
+				default:
+					System.out.println("Respuesta incorrecta");
+					System.out.println("Cerrando programa...");
+					break;
+			}
+        }else {
+        	EmpleadoDatosProf datosEmp = new EmpleadoDatosProf();
+        	datosEmp.setId(datosPK);
+        	datosEmp.setCategoria(categoria);
+        	datosEmp.setSueldo_bruto_anual(sueldo);
+        	
+        	sesion.persist(datosEmp);
+        	System.out.println("Datos del empleado añadidos");
+        }
+        
+        tx.commit();
+        sesion.close();
+	}
+	
+	public static void añadirSedeConProyecto() {
+		
+	}
+
+}

@@ -1,0 +1,70 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bson.Document;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		//insertarLibro();
+		
+		findByTitulo("La araña");
+
+	}
+	
+	private static void insertarLibro() {
+		
+		Document libro = new Document();
+		
+		libro.append("tiutlo", "La araña");
+		
+		List<Document> autores = new ArrayList<>();
+		
+		autores.add(new Document().append("nombre", "Anita").append("sueldo", 50));
+		autores.add(new Document().append("nombre", "Valu").append("sueldo", 50));
+		
+		libro.append("autores", autores);
+		
+		//conexxion al servidor por defecto:
+		MongoClient cliente = MongoClients.create();
+		MongoDatabase db = cliente.getDatabase("biblioteca");
+		MongoCollection<Document> libros = db.getCollection("libros");
+		
+		libros.insertOne(libro);
+		
+		cliente.close();
+	}
+	
+	private static void findByTitulo(String titulo) {
+		
+		Document criterio = new Document();
+		
+		criterio.append("titulo", titulo);
+		
+		MongoClient cliente = MongoClients.create();
+		MongoDatabase db = cliente.getDatabase("biblioteca");
+		MongoCollection<Document> libros = db.getCollection("libros");
+		
+		ArrayList<Document> librosConsulta = libros.find(criterio).into(new ArrayList<>());
+		
+		for(Document libro : librosConsulta) {
+			System.out.println(libro.getString("titulo"));
+			List<Document> autores = (List<Document>) libro.get("autores");
+			for(Document autor : autores) {
+				System.out.println(autor.getString("nombre"));
+				System.out.println(autor.getInteger("sueldo"));
+			}
+		}
+		
+		cliente.close();
+	}
+
+}

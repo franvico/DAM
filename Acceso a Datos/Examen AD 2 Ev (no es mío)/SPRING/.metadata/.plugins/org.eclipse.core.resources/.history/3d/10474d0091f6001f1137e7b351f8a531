@@ -1,0 +1,121 @@
+package com.example.demo.service;
+
+import java.util.List;
+import java.util.Scanner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.modelo.EmpleadoDatosProf;
+import com.example.demo.modelo.EmpleadoDatosProfPK;
+import com.example.demo.modelo.Proyecto;
+import com.example.demo.modelo.ProyectoSede;
+import com.example.demo.modelo.ProyectoSedePK;
+import com.example.demo.modelo.Sede;
+import com.example.demo.repository.EmpleadoDatosProfRepository;
+import com.example.demo.repository.ProyectoRepository;
+import com.example.demo.repository.ProyectoSedeRepository;
+import com.example.demo.repository.SedeRepository;
+
+@Service
+public class ProyectoService {
+	
+	public static Scanner sc = new Scanner(System.in);
+	
+	@Autowired
+    private ProyectoRepository proyRepo;
+	
+	@Autowired
+    private SedeRepository sedeRepo;
+	
+	@Autowired
+    private ProyectoSedeRepository proySedeRepo;
+	
+	@Autowired
+    private EmpleadoDatosProfRepository datosEmpRepo;
+	
+	@Transactional
+    public void añadirProyecto(int id_proy, int id_sede) {
+		
+    	Proyecto p = proyRepo.findById(id_proy).get();
+    	Sede s = sedeRepo.findById(id_sede).get();
+    	ProyectoSede ps = new ProyectoSede();
+    	
+    	//Date fecha = java.sql.Date.valueOf(java.time.LocalDate.now());
+    	
+    	if(p!=null) {
+    		if(s!=null) {
+    			ps.setId(new ProyectoSedePK(id_proy, id_sede));
+    			ps.setProyecto(p);
+    			ps.setSede(s);
+    			ps.setF_inicio(p.getF_inicio());
+    			ps.setF_fin(p.getF_fin());
+    			
+    			proySedeRepo.save(ps);
+    			proySedeRepo.flush();
+    			System.out.println("Proyecto añadido a la sede");
+    		}else {
+    			System.out.println("Id de sede no encontrado");
+    		}
+    	}else {
+    		System.out.println("Id de proyecto no encontrado");
+    	}
+    }
+	
+	@Transactional
+	public void modificarDatosEmpleado(String dni, String categoria, double sueldo) {
+		
+		EmpleadoDatosProfPK datosEmpPK = new EmpleadoDatosProfPK(dni);
+		EmpleadoDatosProf datosEmp = datosEmpRepo.findById(datosEmpPK).get();
+		
+		if(datosEmp!=null) {
+			if(!datosEmp.getCategoria().equals(categoria) && datosEmp.getSueldo_bruto_anual()!=sueldo) {
+				datosEmp.setCategoria(categoria);
+				datosEmp.setSueldo_bruto_anual(sueldo);
+				
+				datosEmpRepo.save(datosEmp);
+			}else {
+				System.out.println("Los datos ya existen. Quieres modificarlos? (si/no):");
+				String res = sc.next();
+				
+				if(res.equals("si")) {
+					datosEmp.setCategoria(categoria);
+					datosEmp.setSueldo_bruto_anual(sueldo);
+					
+					datosEmpRepo.save(datosEmp);
+					System.out.println("Datos modificados");
+				}else if(res.equals("no")) {
+					System.out.println("Datos no modificados");
+				}else {
+					System.out.println("Opcion no valida");
+				}
+			}
+		}else {
+			System.out.println("DNI de empleado no encontrado");
+		}
+	}
+	
+	@Transactional
+	public void añadirSede(String nomProy) {
+		
+		int cont = 0;
+		int id = 0;
+		
+		List<Proyecto> proyectos = proyRepo.findAll();
+		
+		for(Proyecto p : proyectos) {
+			if(p.getNom_proy().equals(nomProy)) {
+				cont++;
+			}
+		}
+		
+		if(cont>1) {
+			System.out.println("Cual es el id del proyecto?:");
+			id = sc.nextInt();
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package logica;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.List;
+
+import clases.Partido;
+import conexion.Conexion;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static List<Partido> juegaEn (int idJugador) {
+		
+		Connection con = Conexion.getConex();
+		PreparedStatement ps;
+		ResultSet registros;
+		
+		String sql = "SELECT p.* "
+				+ "FROM partido p, jugador j, juegaen je "
+				+ "WHERE j.id = ? AND j.id = je.idJugador AND je.idPartido = p.id";
+		
+		return null;
+	}
+
+}

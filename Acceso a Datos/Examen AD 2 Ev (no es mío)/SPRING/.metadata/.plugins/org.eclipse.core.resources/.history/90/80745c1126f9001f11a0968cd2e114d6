@@ -1,0 +1,57 @@
+package logica;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+
+import clases.Partido;
+import conexion.Conexion;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		List<Partido> partidos = juegaEn(2);
+		
+		for(Partido p : partidos) {
+			System.out.println(p);
+		}
+
+	}
+	
+	public static List<Partido> juegaEn (int idJugador) {
+		
+		Connection con = Conexion.getConex();
+		PreparedStatement ps;
+		ResultSet rs;
+		
+		String sql = "SELECT p.* "
+				+ "FROM partido p, jugador j, juegaen je "
+				+ "WHERE j.id = ? AND j.id = je.idJugador AND je.idPartido = p.id";
+		
+		List<Partido> partidos = new LinkedList<>();
+		
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, idJugador);
+			
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				int id = rs.getInt("id");
+				Date fecha = rs.getDate("fecha");
+				String lugar = rs.getString("lugar");
+				
+				partidos.add(new Partido(id, fecha, lugar));
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return partidos;
+	}
+
+}

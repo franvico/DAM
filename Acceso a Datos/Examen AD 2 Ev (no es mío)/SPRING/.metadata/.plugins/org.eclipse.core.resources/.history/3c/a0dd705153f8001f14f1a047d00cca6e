@@ -1,0 +1,41 @@
+package modelo;
+
+import jakarta.persistence.Column;
+
+public class ProyectoSedePk {
+	
+	@Column(name = "id_proy")
+	private int id_proy;
+	
+	@Column(name = "id_proy")
+	private int id_sede;
+
+	public ProyectoSedePk(int id_proy, int id_sede) {
+		super();
+		this.id_proy = id_proy;
+		this.id_sede = id_sede;
+	}
+	
+	public ProyectoSedePk() {
+		
+	}
+
+	public int getId_proy() {
+		return id_proy;
+	}
+
+	public void setId_proy(int id_proy) {
+		this.id_proy = id_proy;
+	}
+
+	public int getId_sede() {
+		return id_sede;
+	}
+
+	public void setId_sede(int id_sede) {
+		this.id_sede = id_sede;
+	}
+	
+	
+
+}
