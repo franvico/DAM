@@ -1,0 +1,13 @@
+package clases;
+
+import java.util.Date;
+
+public class Partido {
+	
+	private int id;
+	private Date fecha;
+	private String lugar;
+	
+	
+
+}

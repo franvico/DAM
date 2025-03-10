@@ -1,0 +1,20 @@
+package clases;
+
+public class JuegaEn {
+	
+	private int idJugador;
+	private int idPartido;
+	
+	public JuegaEn(int idJugador, int idPartido) {
+		super();
+		this.idJugador = idJugador;
+		this.idPartido = idPartido;
+	}
+	
+	public JuegaEn() {
+		
+	}
+	
+	
+
+}

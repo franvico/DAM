@@ -1,0 +1,15 @@
+package modelo;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+
+@Embeddable
+public class JuegaEnPK {
+	
+	@Column(name = "idJugador")
+    private int idJugador;
+	
+	@Column(name = "idPartido")
+    private int idPartido;
+
+}

@@ -1,0 +1,21 @@
+{
+  "_id": {
+    "$oid": "67c1a99749817e44f3d5fdf5"
+  },
+  "nombre": "menu1",
+  "codigo": 1,
+  "restaurantes": [
+    "restaurante1",
+    "restaurante2"
+  ],
+  "platos": [
+    {
+      "nombre": "Ensalada",
+      "precio": 6.5
+    },
+    {
+      "nombre": "Pizza",
+      "precio": 12.5
+    }
+  ]
+}

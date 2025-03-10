@@ -1,0 +1,49 @@
+package logica;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import modelo.Proyecto;
+import modelo.Sede;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void crearProyectoAsignarloASede(String nomProy, Date fInicio, Date fFIn, int idSede) {
+		Session sesion = HibernateUtil.getSessionFactory().openSession();
+        Transaction tx = sesion.beginTransaction();
+        
+        Proyecto p = sesion.get(Proyecto.class, nomProy);
+        Sede s = sesion.get(Sede.class, idSede);
+        
+        if(p!=null) {
+        	System.out.println("El proyecto con este nombre ya existe");
+        	return;
+        }
+        
+        if(s==null) {
+        	System.out.println("La sede no existe");
+        	return;
+        }
+        
+        Proyecto proy = new Proyecto();
+        proy.setNom_proy(nomProy);
+        proy.setF_inicio(fInicio);
+        proy.setF_fin(fFIn);
+        
+        sesion.persist(proy);
+        System.out.println("Proyecto creado");
+        
+        
+        
+        tx.commit();
+        sesion.close();
+	}
+
+}

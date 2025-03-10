@@ -1,0 +1,59 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bson.Document;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	public static void insertarMenu(int codigo, String nombre, List<Document> listaRstaurantes, List<Document> listaPlatos) {
+		
+		Document menu = new Document();
+		
+		MongoClient cliente = MongoClients.create();
+		MongoDatabase db = cliente.getDatabase("restaurante");
+		MongoCollection<Document> menus = db.getCollection("menu");
+		
+		ArrayList<Document> menusConsulta = menus.find(menu).into(new ArrayList<>());
+		
+		for(Document m : menusConsulta) {
+			if(m.getInteger("codigo")==codigo) {
+				System.out.println("El codigo del menu ya existe");
+				return;
+			}
+		}
+		
+		menu.append("codigo", codigo);
+		menu.append("nombre", nombre);
+		menu.append("restaurantes", listaRstaurantes);
+		menu.append("platos", listaPlatos);
+		
+		menus.insertOne(menu);
+		
+		cliente.close();
+	}
+	
+	public static void recuperarPlatosDelMenu(int codigo) {
+		
+		Document menu = new Document();
+		
+		MongoClient cliente = MongoClients.create();
+		MongoDatabase db = cliente.getDatabase("restaurante");
+		MongoCollection<Document> menus = db.getCollection("menu");
+		
+		
+	}
+
+}
