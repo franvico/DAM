@@ -1,0 +1,52 @@
+[
+  {
+    "nombre": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "precio": 49.99,
+    "idiomas": [
+      { "nombre": "Español", "abreviatura": "ES" },
+      { "nombre": "Inglés", "abreviatura": "EN" },
+      { "nombre": "Francés", "abreviatura": "FR" }
+    ]
+  },
+  {
+    "nombre": "1984",
+    "autor": "George Orwell",
+    "precio": 39.99,
+    "idiomas": [
+      { "nombre": "Inglés", "abreviatura": "EN" },
+      { "nombre": "Alemán", "abreviatura": "DE" },
+      { "nombre": "Italiano", "abreviatura": "IT" }
+    ]
+  },
+  {
+    "nombre": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "precio": 45.50,
+    "idiomas": [
+      { "nombre": "Español", "abreviatura": "ES" },
+      { "nombre": "Inglés", "abreviatura": "EN" },
+      { "nombre": "Portugués", "abreviatura": "PT" }
+    ]
+  },
+  {
+    "nombre": "Crimen y castigo",
+    "autor": "Fiódor Dostoyevski",
+    "precio": 42.50,
+    "idiomas": [
+      { "nombre": "Ruso", "abreviatura": "RU" },
+      { "nombre": "Inglés", "abreviatura": "EN" },
+      { "nombre": "Francés", "abreviatura": "FR" }
+    ]
+  },
+  {
+    "nombre": "Orgullo y prejuicio",
+    "autor": "Jane Austen",
+    "precio": 35.75,
+    "idiomas": [
+      { "nombre": "Inglés", "abreviatura": "EN" },
+      { "nombre": "Italiano", "abreviatura": "IT" },
+      { "nombre": "Español", "abreviatura": "ES" }
+    ]
+  }
+]

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename field &apos;idcodEstacion&apos; in &apos;modelo.Estacion&apos; to &apos;codEstacion&apos;&#x0D;&#x0A;- Original project: &apos;EJERCICIO-HIBERNATE-JPA&apos;&#x0D;&#x0A;- Original element: &apos;modelo.Estacion.idcodEstacion&apos;&#x0D;&#x0A;- Renamed element: &apos;modelo.Estacion.codEstacion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;idcodEstacion&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;modelo{Estacion.java[Estacion^idcodEstacion" name="codEstacion" references="true" setter="false" stamp="1740226476075" textual="false" version="1.0"/>
-</session>
