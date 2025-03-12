@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetario>
+    <receta>
+        <nombre>Spaghetti Carbonara</nombre>
+        <cocina>
+            <nombre>Italiana</nombre>
+        </cocina>
+        <ingredientes>
+            <ingrediente>
+                <nombre>Pasta</nombre>
+                <cantidad>200g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Tocino</nombre>
+                <cantidad>100g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Queso Parmesano</nombre>
+                <cantidad>50g</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </receta>
+    <receta>
+        <nombre>Cocido</nombre>
+        <cocina>
+            <nombre>Española</nombre>
+        </cocina>
+        <ingredientes>
+            <ingrediente>
+                <nombre>Garbanzos</nombre>
+                <cantidad>500g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Tocino</nombre>
+                <cantidad>100g</cantidad>
+            </ingrediente>
+            <ingrediente>
+                <nombre>Zanahorias</nombre>
+                <cantidad>100g</cantidad>
+            </ingrediente>
+        </ingredientes>
+    </receta>
+
+</recetario>
